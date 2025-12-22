@@ -1875,6 +1875,1165 @@ export const procedures: Procedure[] = [
     ],
     difficulty: 'basic',
     estimatedTime: '10-15 minutes'
+  },
+  {
+    id: 'sterile-gloving',
+    title: 'Sterile Gloving Technique',
+    category: 'Infection Control',
+    categorySlug: 'infection-control',
+    description: 'Sterile gloving is a critical skill for maintaining surgical asepsis during invasive procedures. Proper technique prevents contamination of sterile gloves and protects both patient and healthcare worker.',
+    indications: [
+      'Surgical procedures',
+      'Urinary catheterization',
+      'Wound care requiring sterile technique',
+      'Central line insertion or care',
+      'Any procedure requiring surgical asepsis'
+    ],
+    contraindications: [
+      'Latex allergy (use non-latex alternatives)',
+      'Open wounds or lesions on hands (use additional barrier)'
+    ],
+    equipment: [
+      'Sterile gloves of appropriate size',
+      'Clean, flat surface for glove package',
+      'Hand hygiene supplies'
+    ],
+    preparation: [
+      'Perform thorough hand hygiene',
+      'Remove all jewelry',
+      'Ensure nails are short and clean',
+      'Select correct glove size',
+      'Check package integrity and expiration date'
+    ],
+    steps: [
+      { step: 1, action: 'Place sterile glove package on clean, flat surface at waist level', rationale: 'Provides accessible work surface and prevents contamination' },
+      { step: 2, action: 'Open outer package without touching inner sterile package', rationale: 'Maintains sterility of inner package' },
+      { step: 3, action: 'Open inner package by touching only outer edges', rationale: 'Inside of package and gloves remain sterile' },
+      { step: 4, action: 'Identify right and left gloves (thumbs face outward)', rationale: 'Ensures correct glove for each hand' },
+      { step: 5, action: 'With non-dominant hand, grasp inside cuff of glove for dominant hand', rationale: 'Inside of glove will contact skin, maintaining sterility of outside' },
+      { step: 6, action: 'Insert dominant hand into glove with fingers pointing upward', rationale: 'Allows gravity to help slide glove on' },
+      { step: 7, action: 'Pull glove onto hand, touching only inside of cuff', rationale: 'Prevents contamination of sterile outer surface' },
+      { step: 8, action: 'With gloved dominant hand, slide fingers under cuff of remaining glove', rationale: 'Sterile surface touches sterile surface' },
+      { step: 9, action: 'Pull second glove onto non-dominant hand', rationale: 'Maintains sterility using sterile-to-sterile contact' },
+      { step: 10, action: 'Adjust gloves for comfortable fit without touching bare skin', rationale: 'Ensures proper fit while maintaining sterility' },
+      { step: 11, action: 'Keep gloved hands above waist and in front of body', rationale: 'Area below waist and behind body are considered contaminated' },
+      { step: 12, action: 'Inspect gloves for tears or defects', rationale: 'Ensures barrier integrity' }
+    ],
+    safetyAlerts: [
+      'If glove becomes contaminated, remove and replace with new sterile gloves',
+      'If glove tears during procedure, stop and replace immediately',
+      'Do not touch any non-sterile surface with gloved hands'
+    ],
+    nursingConsiderations: [
+      'Practice technique regularly to maintain competency',
+      'Choose correct glove size to prevent tears',
+      'Have backup pair readily available'
+    ],
+    postProcedureCare: [
+      'Remove gloves using proper technique to prevent contamination',
+      'Perform hand hygiene after glove removal',
+      'Dispose of gloves in appropriate waste container'
+    ],
+    documentation: [
+      'Document use of sterile technique in procedure note',
+      'Note if any breaks in sterile technique occurred'
+    ],
+    commonErrors: [
+      'Touching outside of glove with bare hand',
+      'Allowing gloves to touch non-sterile surfaces',
+      'Using incorrect glove size',
+      'Not checking for tears before use'
+    ],
+    tips: [
+      'Keep hands dry for easier gloving',
+      'If struggling, allow cuff to snap back and try again',
+      'Practice with eyes closed to develop tactile awareness',
+      'Keep spare gloves accessible during procedures'
+    ],
+    references: [
+      'AORN. (2023). Guidelines for Perioperative Practice.',
+      'CDC. (2019). Guideline for Disinfection and Sterilization in Healthcare Facilities.',
+      'WHO. (2009). WHO Guidelines on Hand Hygiene in Health Care.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '2-3 minutes'
+  },
+  {
+    id: 'isolation-precautions',
+    title: 'Isolation Precautions Implementation',
+    category: 'Infection Control',
+    categorySlug: 'infection-control',
+    description: 'Isolation precautions are infection prevention practices used to prevent transmission of infectious agents. This includes standard precautions and transmission-based precautions tailored to the mode of disease transmission.',
+    indications: [
+      'Patients with known or suspected infectious diseases',
+      'Patients colonized with multidrug-resistant organisms',
+      'Immunocompromised patients requiring protection',
+      'During outbreak situations',
+      'Post-exposure prophylaxis situations'
+    ],
+    contraindications: [
+      'None absolute - precautions must be adapted to patient needs'
+    ],
+    equipment: [
+      'Appropriate personal protective equipment (PPE):',
+      '- N95 respirator or surgical mask',
+      '- Gown',
+      '- Gloves',
+      '- Eye protection (goggles or face shield)',
+      'Hand hygiene supplies',
+      'Isolation signage',
+      'Dedicated patient care equipment'
+    ],
+    preparation: [
+      'Review patient diagnosis and required precautions',
+      'Verify appropriate isolation room (negative pressure for airborne)',
+      'Gather all necessary PPE',
+      'Post appropriate signage on door',
+      'Educate patient and visitors about precautions'
+    ],
+    steps: [
+      { step: 1, action: 'Identify type of isolation required (contact, droplet, airborne)', rationale: 'Determines appropriate PPE and room requirements' },
+      { step: 2, action: 'Perform hand hygiene before donning PPE', rationale: 'Reduces microorganism transmission' },
+      { step: 3, action: 'Don gown first, tying at neck and waist', rationale: 'Gown goes on first to protect clothing' },
+      { step: 4, action: 'Put on mask or respirator, ensuring proper seal', rationale: 'Protects respiratory system; must fit test N95' },
+      { step: 5, action: 'Apply eye protection if required', rationale: 'Protects mucous membranes of eyes' },
+      { step: 6, action: 'Don gloves, pulling cuffs over gown cuffs', rationale: 'Ensures no gap between glove and gown' },
+      { step: 7, action: 'Enter patient room and provide care', rationale: 'Minimize time in room while providing quality care' },
+      { step: 8, action: 'To remove: Unfasten gown ties and remove gloves with gown', rationale: 'Gloves are most contaminated; removing together minimizes contact' },
+      { step: 9, action: 'Remove eye protection by handling headband or earpieces only', rationale: 'Front of eyewear is contaminated' },
+      { step: 10, action: 'Remove mask/respirator by handling straps only', rationale: 'Front of mask is contaminated' },
+      { step: 11, action: 'Perform hand hygiene immediately after doffing', rationale: 'Removes any contamination from removal process' },
+      { step: 12, action: 'Exit room and document care provided', rationale: 'Maintains record of patient contact' }
+    ],
+    safetyAlerts: [
+      'Never reuse single-use PPE',
+      'N95 respirators require annual fit testing',
+      'Ensure negative pressure room for airborne precautions',
+      'Report any PPE failures or exposures immediately'
+    ],
+    nursingConsiderations: [
+      'Batch care activities to minimize room entries',
+      'Keep dedicated equipment in isolation room',
+      'Monitor visitors for compliance',
+      'Assess patient psychosocial needs related to isolation'
+    ],
+    postProcedureCare: [
+      'Ensure patient has call light and essentials within reach',
+      'Schedule regular check-ins to reduce isolation effects',
+      'Clean and disinfect reusable equipment before removal'
+    ],
+    documentation: [
+      'Type of isolation precautions in place',
+      'Patient and family education provided',
+      'Any breaks in isolation protocol',
+      'Cultures or tests pending'
+    ],
+    commonErrors: [
+      'Incorrect sequence of donning/doffing PPE',
+      'Touching face with contaminated gloves',
+      'Not performing hand hygiene between steps',
+      'Using incorrect PPE for isolation type'
+    ],
+    tips: [
+      'Post donning/doffing sequence at room entrance',
+      'Use buddy system for high-risk doffing',
+      'Pre-stage supplies to minimize room entries',
+      'Consider patient mental health in long-term isolation'
+    ],
+    references: [
+      'CDC. (2023). Guidelines for Isolation Precautions.',
+      'APIC. (2023). Infection Prevention Manual.',
+      'OSHA. (2023). Bloodborne Pathogen Standards.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '5-10 minutes for donning/doffing'
+  },
+  {
+    id: 'venipuncture',
+    title: 'Venipuncture for Blood Draw',
+    category: 'IV Therapy',
+    categorySlug: 'iv-therapy',
+    description: 'Venipuncture is the puncture of a vein for the collection of blood specimens for laboratory analysis. Proper technique ensures patient safety, specimen integrity, and accurate test results.',
+    indications: [
+      'Laboratory blood tests ordered',
+      'Blood culture collection',
+      'Blood bank specimens',
+      'Therapeutic phlebotomy',
+      'Blood donation'
+    ],
+    contraindications: [
+      'Avoid arm with AV fistula or graft',
+      'Avoid arm on side of mastectomy with lymph node removal',
+      'Avoid sites with IV infusion, hematoma, or infection',
+      'Use caution in patients on anticoagulants',
+      'Avoid areas of burns or scarring'
+    ],
+    equipment: [
+      'Vacutainer system or syringe with appropriate gauge needle (21-23g)',
+      'Blood collection tubes in correct order of draw',
+      'Tourniquet',
+      'Alcohol prep pads',
+      'Gauze pads',
+      'Adhesive bandage or tape',
+      'Gloves',
+      'Sharps container',
+      'Labels and requisitions'
+    ],
+    preparation: [
+      'Verify patient identity using two identifiers',
+      'Check order and required tests',
+      'Explain procedure to patient',
+      'Position patient comfortably with arm extended',
+      'Assemble equipment and label tubes',
+      'Perform hand hygiene and don gloves'
+    ],
+    steps: [
+      { step: 1, action: 'Apply tourniquet 3-4 inches above intended site', rationale: 'Distends veins for easier visualization and palpation' },
+      { step: 2, action: 'Ask patient to make fist without pumping', rationale: 'Further distends veins; pumping can alter lab values' },
+      { step: 3, action: 'Palpate and select suitable vein (antecubital preferred)', rationale: 'Antecubital veins are larger and more stable' },
+      { step: 4, action: 'Clean site with alcohol in circular motion, allow to air dry', rationale: 'Reduces skin flora; wet alcohol causes hemolysis' },
+      { step: 5, action: 'Anchor vein by pulling skin taut below puncture site', rationale: 'Prevents vein from rolling during insertion' },
+      { step: 6, action: 'Insert needle at 15-30 degree angle, bevel up', rationale: 'Allows smooth entry into vein' },
+      { step: 7, action: 'Observe for flashback in tubing or needle hub', rationale: 'Confirms successful vein entry' },
+      { step: 8, action: 'Collect tubes in correct order of draw', rationale: 'Prevents cross-contamination of additives' },
+      { step: 9, action: 'Release tourniquet before removing last tube', rationale: 'Reduces risk of hematoma formation' },
+      { step: 10, action: 'Have patient open fist', rationale: 'Reduces venous pressure' },
+      { step: 11, action: 'Remove needle and apply gauze with pressure', rationale: 'Achieves hemostasis at puncture site' },
+      { step: 12, action: 'Activate safety device and dispose in sharps container', rationale: 'Prevents needlestick injury' },
+      { step: 13, action: 'Apply adhesive bandage after bleeding stops', rationale: 'Protects puncture site' },
+      { step: 14, action: 'Gently invert tubes with additives 8-10 times', rationale: 'Ensures proper mixing of blood and additives' },
+      { step: 15, action: 'Label tubes at bedside and transport promptly', rationale: 'Ensures specimen integrity and correct identification' }
+    ],
+    safetyAlerts: [
+      'Never recap needles - use safety device immediately',
+      'If patient feels faint, lower head and apply cool cloth',
+      'Release tourniquet after 1 minute maximum',
+      'Stop if patient reports shooting pain (possible nerve contact)'
+    ],
+    nursingConsiderations: [
+      'Apply warm compress to site if veins are difficult to access',
+      'Consider butterfly needle for small or fragile veins',
+      'Limit attempts to 2 per phlebotomist',
+      'Document failed attempts'
+    ],
+    postProcedureCare: [
+      'Instruct patient to keep bandage on for 15-30 minutes',
+      'Advise to avoid heavy lifting with that arm',
+      'Monitor for signs of hematoma or continued bleeding',
+      'Provide refreshments if large volume drawn'
+    ],
+    documentation: [
+      'Date, time, and site of collection',
+      'Tests collected and number of tubes',
+      'Any complications or difficulties',
+      'Patient tolerance of procedure'
+    ],
+    commonErrors: [
+      'Leaving tourniquet on too long (alters results)',
+      'Incorrect order of draw',
+      'Underfilling or overfilling tubes',
+      'Not mixing tubes properly',
+      'Mislabeling specimens'
+    ],
+    tips: [
+      'Use median cubital vein when possible',
+      'Palpate, don\'t just look for veins',
+      'Keep patient arm straight and lower than heart',
+      'Use pediatric tubes for elderly or anemic patients'
+    ],
+    references: [
+      'CLSI. (2023). Procedures for Collection of Diagnostic Blood Specimens by Venipuncture.',
+      'WHO. (2010). Best Practices in Phlebotomy.',
+      'ASCP. (2023). Phlebotomy Standards.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '5-10 minutes'
+  },
+  {
+    id: 'tracheostomy-care',
+    title: 'Tracheostomy Care and Suctioning',
+    category: 'Oxygen Therapy',
+    categorySlug: 'oxygen-therapy',
+    description: 'Tracheostomy care involves maintaining patency and cleanliness of the tracheostomy tube and surrounding stoma to prevent infection and ensure adequate ventilation. This includes suctioning, inner cannula care, and site cleaning.',
+    indications: [
+      'Routine tracheostomy maintenance (every 8-12 hours)',
+      'Visible secretions in or around tube',
+      'Audible gurgling or noisy breathing',
+      'Decreased oxygen saturation',
+      'Patient distress or difficulty breathing',
+      'Soiled or wet tracheostomy dressing'
+    ],
+    contraindications: [
+      'Recent tracheostomy surgery (modified technique required)',
+      'Bleeding from stoma (notify physician first)',
+      'Unstable patient (stabilize first unless airway compromise)'
+    ],
+    equipment: [
+      'Sterile suction catheter kit',
+      'Suction machine with appropriate pressure (80-120 mmHg)',
+      'Sterile normal saline',
+      'Tracheostomy care kit (brush, sterile gauze, ties)',
+      'Hydrogen peroxide and normal saline for cleaning',
+      'Sterile gloves',
+      'Clean gloves',
+      'Pre-cut tracheostomy dressing',
+      'New tracheostomy ties if needed',
+      'Bag-valve mask for emergency',
+      'Pulse oximeter'
+    ],
+    preparation: [
+      'Explain procedure to patient',
+      'Position patient semi-Fowler\'s (30-45 degrees)',
+      'Pre-oxygenate patient if on oxygen',
+      'Assemble equipment at bedside',
+      'Verify suction equipment is functioning',
+      'Perform hand hygiene'
+    ],
+    steps: [
+      { step: 1, action: 'Assess respiratory status, oxygen saturation, and secretion amount', rationale: 'Establishes baseline and determines urgency of intervention' },
+      { step: 2, action: 'Don clean gloves and prepare suction equipment', rationale: 'Prepares for suctioning while maintaining infection control' },
+      { step: 3, action: 'Pre-oxygenate patient with 100% O2 for 30-60 seconds if tolerated', rationale: 'Prevents hypoxia during suctioning' },
+      { step: 4, action: 'Open sterile suction catheter, maintaining sterility', rationale: 'Lower airway is sterile; prevents infection' },
+      { step: 5, action: 'Connect catheter to suction tubing', rationale: 'Prepares system for use' },
+      { step: 6, action: 'Insert catheter without suction to just past trach tube length', rationale: 'Prevents trauma to airway mucosa' },
+      { step: 7, action: 'Apply intermittent suction while withdrawing, rotating catheter', rationale: 'Maximizes secretion removal while minimizing trauma' },
+      { step: 8, action: 'Limit suctioning to 10-15 seconds per pass', rationale: 'Prevents hypoxia and airway trauma' },
+      { step: 9, action: 'Allow recovery and re-oxygenate between passes', rationale: 'Maintains adequate oxygenation' },
+      { step: 10, action: 'Repeat suctioning as needed (maximum 3 passes)', rationale: 'Excessive suctioning causes trauma and hypoxia' },
+      { step: 11, action: 'Remove inner cannula if applicable and clean or replace', rationale: 'Maintains patency and prevents mucus buildup' },
+      { step: 12, action: 'Clean stoma site with half-strength hydrogen peroxide, then rinse with saline', rationale: 'Removes secretions and prevents skin breakdown' },
+      { step: 13, action: 'Apply clean, pre-cut tracheostomy dressing', rationale: 'Absorbs secretions and protects skin' },
+      { step: 14, action: 'Change tracheostomy ties if soiled, keeping one tie secure at all times', rationale: 'Prevents accidental decannulation' },
+      { step: 15, action: 'Assess respiratory status post-procedure', rationale: 'Ensures procedure was effective and patient is stable' }
+    ],
+    safetyAlerts: [
+      'Keep spare tracheostomy tube at bedside at all times',
+      'Never suction for more than 15 seconds per pass',
+      'If unable to pass suction catheter, check for obstruction',
+      'Call for help immediately if accidental decannulation occurs',
+      'Monitor for bleeding, increased secretions, or signs of infection'
+    ],
+    nursingConsiderations: [
+      'Assess swallowing ability before oral intake',
+      'Communicate using alternative methods (writing, communication board)',
+      'Humidify inspired air to prevent mucus plugging',
+      'Monitor cuff pressure if cuffed tube in place'
+    ],
+    postProcedureCare: [
+      'Return oxygen to prescribed flow rate',
+      'Reposition patient for comfort',
+      'Provide oral care',
+      'Monitor for signs of respiratory distress'
+    ],
+    documentation: [
+      'Amount, color, consistency, and odor of secretions',
+      'Patient tolerance of procedure',
+      'Pre and post-oxygen saturation',
+      'Condition of stoma and surrounding skin',
+      'Inner cannula care performed'
+    ],
+    commonErrors: [
+      'Suctioning too long causing hypoxia',
+      'Not pre-oxygenating patient',
+      'Using excessive suction pressure',
+      'Forcing catheter causing trauma',
+      'Not keeping spare tube at bedside'
+    ],
+    tips: [
+      'Use normal saline sparingly - evidence doesn\'t support routine instillation',
+      'Have assistant stabilize tube when changing ties',
+      'Suction mouth/pharynx last with separate catheter',
+      'Track secretion patterns to anticipate needs'
+    ],
+    references: [
+      'AARC. (2023). Clinical Practice Guidelines for Tracheostomy Care.',
+      'ATS. (2023). Care of the Patient with Tracheostomy.',
+      'Potter, P.A., & Perry, A.G. (2023). Fundamentals of Nursing, 11th ed.'
+    ],
+    difficulty: 'advanced',
+    estimatedTime: '15-20 minutes'
+  },
+  {
+    id: 'chest-tube-management',
+    title: 'Chest Tube Management',
+    category: 'Emergency Procedures',
+    categorySlug: 'emergency',
+    description: 'Chest tube management involves maintaining and monitoring chest drainage systems to evacuate air, blood, or fluid from the pleural space. Proper management ensures lung re-expansion and prevents complications.',
+    indications: [
+      'Pneumothorax (air in pleural space)',
+      'Hemothorax (blood in pleural space)',
+      'Pleural effusion drainage',
+      'Post-thoracic surgery',
+      'Empyema drainage'
+    ],
+    contraindications: [
+      'Manipulation of chest tube system by unlicensed personnel',
+      'Clamping chest tube without physician order',
+      'Removing chest tube without order and preparation'
+    ],
+    equipment: [
+      'Chest drainage system (water seal or dry suction)',
+      'Suction source if ordered',
+      'Sterile water for water seal chamber',
+      'Occlusive dressing materials',
+      'Tape',
+      'Sterile gloves',
+      'Two padded clamps (for emergency only)',
+      'Petroleum gauze (for emergency tube dislodgement)',
+      'Pulse oximeter'
+    ],
+    preparation: [
+      'Verify chest tube placement by reviewing chest x-ray',
+      'Ensure drainage system is correctly assembled',
+      'Set up at bedside below chest level',
+      'Verify connections are tight and secure',
+      'Check suction setting if ordered'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and introduce yourself to patient', rationale: 'Infection control and patient identification' },
+      { step: 2, action: 'Assess respiratory status: breath sounds, oxygen saturation, respiratory effort', rationale: 'Establishes baseline and detects changes' },
+      { step: 3, action: 'Check chest tube insertion site for drainage, subcutaneous emphysema, or infection', rationale: 'Early detection of complications' },
+      { step: 4, action: 'Ensure all connections are tight and system is intact', rationale: 'Air leaks compromise drainage and lung expansion' },
+      { step: 5, action: 'Verify chest tube is securely taped to patient', rationale: 'Prevents accidental dislodgement' },
+      { step: 6, action: 'Check water seal chamber for tidaling with respiration', rationale: 'Tidaling indicates patent tube and pleural pressure changes' },
+      { step: 7, action: 'Observe for continuous bubbling in water seal chamber', rationale: 'Continuous bubbling indicates air leak in system or patient' },
+      { step: 8, action: 'Check suction control chamber for gentle bubbling (if suction ordered)', rationale: 'Confirms proper suction level' },
+      { step: 9, action: 'Measure and record drainage output hourly or as ordered', rationale: 'Monitors bleeding and fluid output' },
+      { step: 10, action: 'Mark drainage level on collection chamber with date and time', rationale: 'Provides accurate output measurement' },
+      { step: 11, action: 'Ensure tubing is free of kinks and dependent loops', rationale: 'Obstructions prevent proper drainage' },
+      { step: 12, action: 'Keep drainage system upright and below chest level at all times', rationale: 'Prevents backflow into pleural space' },
+      { step: 13, action: 'Encourage deep breathing exercises and incentive spirometry', rationale: 'Promotes lung expansion and drainage' },
+      { step: 14, action: 'Assess pain level and medicate as ordered before activities', rationale: 'Pain control improves breathing and mobility' }
+    ],
+    safetyAlerts: [
+      'NEVER clamp chest tube except briefly during system changes or as ordered',
+      'If tube disconnects, place end in sterile water to maintain water seal',
+      'Report sudden cessation of drainage or sudden increase >100mL/hour',
+      'If tube dislodges, cover site immediately with petroleum gauze and call physician',
+      'Keep two padded clamps at bedside for emergency use only'
+    ],
+    nursingConsiderations: [
+      'Never strip or milk chest tubes (can create dangerous negative pressure)',
+      'Ambulation is encouraged - maintain system below chest level',
+      'Document air leak status using consistent grading scale',
+      'Prepare for chest tube removal per physician order'
+    ],
+    postProcedureCare: [
+      'Continue regular respiratory assessments',
+      'Encourage incentive spirometry every hour while awake',
+      'Position patient for optimal drainage',
+      'Manage pain to facilitate deep breathing'
+    ],
+    documentation: [
+      'Amount, color, and consistency of drainage',
+      'Presence or absence of tidaling',
+      'Air leak status (graded 1-7 or descriptive)',
+      'Respiratory assessment findings',
+      'Patient tolerance of activity',
+      'Suction level if applicable'
+    ],
+    commonErrors: [
+      'Allowing dependent loops in tubing',
+      'Raising drainage system above chest level',
+      'Clamping tube without order',
+      'Stripping or milking the tube',
+      'Not marking drainage levels'
+    ],
+    tips: [
+      'Coil excess tubing on bed, not on floor',
+      'Secure connections with tape but allow for inspection',
+      'During transport, keep system upright and below chest',
+      'If system cracks, submerge chest tube end in bottle of sterile water'
+    ],
+    references: [
+      'AACN. (2023). Procedure Manual for High Acuity, Progressive and Critical Care.',
+      'Bauman, M., & Handley, C. (2023). Chest Tube Care: The More You Know.',
+      'Lewis, S.L., et al. (2023). Medical-Surgical Nursing, 12th ed.'
+    ],
+    difficulty: 'advanced',
+    estimatedTime: '15-20 minutes for full assessment'
+  },
+  {
+    id: 'blood-glucose-monitoring',
+    title: 'Blood Glucose Monitoring',
+    category: 'Vital Signs',
+    categorySlug: 'vital-signs',
+    description: 'Capillary blood glucose monitoring is a point-of-care test used to measure blood sugar levels. Accurate technique is essential for proper diabetes management and detection of hypo/hyperglycemia.',
+    indications: [
+      'Diabetes mellitus management',
+      'Before and after meals in diabetic patients',
+      'Signs of hypoglycemia (shakiness, sweating, confusion)',
+      'Signs of hyperglycemia (polyuria, polydipsia, fatigue)',
+      'Patients on insulin or oral hypoglycemic agents',
+      'Critically ill patients',
+      'Total parenteral nutrition monitoring'
+    ],
+    contraindications: [
+      'Do not use fingertip sites in patients with peripheral vascular disease',
+      'Avoid sites with edema or impaired circulation',
+      'Do not use alternate sites during hypoglycemia (fingertip only)'
+    ],
+    equipment: [
+      'Blood glucose meter',
+      'Glucose test strips compatible with meter',
+      'Lancet device with sterile lancet',
+      'Alcohol prep pad',
+      'Gauze or cotton ball',
+      'Gloves',
+      'Sharps container',
+      'Glucose log if applicable'
+    ],
+    preparation: [
+      'Verify glucose meter is calibrated and not expired',
+      'Check test strip expiration date',
+      'Have patient wash hands with warm water (improves blood flow)',
+      'Avoid using alcohol immediately before (can falsely lower results)',
+      'Gather all supplies at bedside'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and don gloves', rationale: 'Standard precautions for blood exposure' },
+      { step: 2, action: 'Verify patient identity and explain procedure', rationale: 'Ensures correct patient and promotes cooperation' },
+      { step: 3, action: 'Turn on glucose meter and insert test strip', rationale: 'Prepares meter; some meters auto-code from strip' },
+      { step: 4, action: 'Select puncture site (side of fingertip preferred)', rationale: 'Sides have fewer nerve endings and better capillary blood flow' },
+      { step: 5, action: 'Clean site with alcohol and allow to air dry completely', rationale: 'Alcohol can dilute blood and affect results' },
+      { step: 6, action: 'Hold finger below heart level and massage toward tip', rationale: 'Increases blood flow to puncture site' },
+      { step: 7, action: 'Place lancet device firmly against side of finger and activate', rationale: 'Firm placement ensures adequate penetration' },
+      { step: 8, action: 'Wipe away first drop of blood with gauze', rationale: 'First drop may contain interstitial fluid affecting accuracy' },
+      { step: 9, action: 'Gently squeeze finger to form large hanging drop', rationale: 'Adequate sample size ensures accurate reading' },
+      { step: 10, action: 'Touch blood drop to test strip application area', rationale: 'Strip should wick blood automatically' },
+      { step: 11, action: 'Apply pressure to puncture site with gauze', rationale: 'Achieves hemostasis' },
+      { step: 12, action: 'Wait for meter to display result', rationale: 'Results typically appear in 5-10 seconds' },
+      { step: 13, action: 'Compare result to expected range and take action if needed', rationale: 'Timely intervention for abnormal values' },
+      { step: 14, action: 'Dispose of lancet and test strip properly', rationale: 'Prevents sharps injuries and biohazard exposure' }
+    ],
+    safetyAlerts: [
+      'HYPOGLYCEMIA (<70 mg/dL): Treat immediately per protocol',
+      'SEVERE HYPOGLYCEMIA (<40 mg/dL): Emergency - may require IV dextrose',
+      'HYPERGLYCEMIA (>300 mg/dL): Check for ketones, notify physician',
+      'Never share lancet devices between patients - single patient use only',
+      'Clean meter between patients per manufacturer guidelines'
+    ],
+    nursingConsiderations: [
+      'Rotate puncture sites to prevent callus formation',
+      'Avoid thumb and index finger (used most often)',
+      'Ensure meter is quality controlled per hospital policy',
+      'Consider continuous glucose monitoring for unstable patients'
+    ],
+    postProcedureCare: [
+      'Document result in glucose log and medical record',
+      'Administer insulin or treatment per protocol',
+      'Educate patient on self-monitoring technique',
+      'Plan next monitoring time'
+    ],
+    documentation: [
+      'Date, time, and blood glucose result',
+      'Site used for testing',
+      'Treatment given if applicable',
+      'Patient symptoms if abnormal result',
+      'Notification of physician if indicated'
+    ],
+    commonErrors: [
+      'Using expired test strips',
+      'Not allowing alcohol to dry completely',
+      'Squeezing finger too hard (dilutes with interstitial fluid)',
+      'Insufficient blood sample',
+      'Using wrong meter code for strips'
+    ],
+    tips: [
+      'Warm hands increase blood flow and ease of sampling',
+      'Use less painful alternate sites when appropriate',
+      'Store test strips per manufacturer recommendations',
+      'If result doesn\'t match clinical picture, repeat test'
+    ],
+    references: [
+      'American Diabetes Association. (2024). Standards of Care in Diabetes.',
+      'CDC. (2023). Infection Prevention during Blood Glucose Monitoring.',
+      'FDA. (2023). Blood Glucose Meter Accuracy Requirements.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '2-3 minutes'
+  },
+  {
+    id: 'feeding-tube-administration',
+    title: 'Enteral Feeding Administration',
+    category: 'Nasogastric Procedures',
+    categorySlug: 'nasogastric',
+    description: 'Enteral feeding administration involves delivering liquid nutrition directly into the gastrointestinal tract through a feeding tube. This procedure requires verification of tube placement and careful monitoring to prevent complications.',
+    indications: [
+      'Inability to swallow safely',
+      'Neurological conditions affecting swallowing',
+      'Prolonged mechanical ventilation',
+      'Malnutrition requiring nutritional support',
+      'GI surgery requiring bowel rest with distal feeding',
+      'Facial or esophageal trauma'
+    ],
+    contraindications: [
+      'Bowel obstruction or ileus',
+      'Gastrointestinal bleeding',
+      'Severe vomiting or high gastric residuals',
+      'Unconfirmed tube placement',
+      'Hemodynamic instability'
+    ],
+    equipment: [
+      'Prescribed enteral formula at room temperature',
+      'Feeding pump and tubing (for continuous feeds)',
+      'Syringe (60 mL catheter tip)',
+      'Stethoscope',
+      'pH strips',
+      'Clean gloves',
+      'Water for flushing (as ordered)',
+      'Measuring cup or graduated container'
+    ],
+    preparation: [
+      'Verify physician order for formula type and rate',
+      'Check formula expiration date',
+      'Warm formula to room temperature if refrigerated',
+      'Position patient with head of bed elevated 30-45 degrees',
+      'Perform hand hygiene',
+      'Verify tube placement before each feeding'
+    ],
+    steps: [
+      { step: 1, action: 'Verify patient identity and explain procedure', rationale: 'Ensures correct patient and informed participation' },
+      { step: 2, action: 'Elevate head of bed to 30-45 degrees', rationale: 'Reduces aspiration risk' },
+      { step: 3, action: 'Check external tube marking matches documented length', rationale: 'Initial check that tube hasn\'t migrated' },
+      { step: 4, action: 'Aspirate gastric contents and check pH (should be <5.5)', rationale: 'pH confirmation helps verify gastric placement' },
+      { step: 5, action: 'Check gastric residual volume (GRV)', rationale: 'High residuals may indicate intolerance or obstruction' },
+      { step: 6, action: 'Return residual to stomach unless otherwise ordered', rationale: 'Prevents electrolyte imbalance' },
+      { step: 7, action: 'Flush tube with 30 mL water', rationale: 'Ensures patency and clears tube' },
+      { step: 8, action: 'For bolus feeding: attach syringe and slowly pour formula', rationale: 'Gravity flow prevents cramping; rate 200-400 mL over 15-30 min' },
+      { step: 9, action: 'For continuous feeding: prime pump tubing and set rate', rationale: 'Pump ensures accurate, consistent delivery' },
+      { step: 10, action: 'Connect tubing to feeding tube securely', rationale: 'Prevents disconnection and aspiration risk' },
+      { step: 11, action: 'Start feeding at prescribed rate', rationale: 'Gradual advancement prevents intolerance' },
+      { step: 12, action: 'Flush tube with 30 mL water after bolus feeding or Q4-6h for continuous', rationale: 'Maintains patency and provides additional hydration' },
+      { step: 13, action: 'Maintain head elevation for 30-60 minutes after feeding', rationale: 'Reduces aspiration risk during gastric emptying' },
+      { step: 14, action: 'Document feeding and patient tolerance', rationale: 'Tracks intake and identifies issues' }
+    ],
+    safetyAlerts: [
+      'NEVER feed through tube without verifying placement',
+      'Hold feeding if gastric residual >500 mL or per facility protocol',
+      'Stop feeding immediately if patient shows signs of aspiration',
+      'Blue food coloring should NOT be used to check placement (FDA warning)',
+      'Change feeding bags and tubing every 24-48 hours per policy'
+    ],
+    nursingConsiderations: [
+      'Monitor for feeding intolerance (nausea, vomiting, distension, diarrhea)',
+      'Check tube placement before each intermittent feeding',
+      'Ensure formula is not hanging for more than 4-8 hours at room temperature',
+      'Monitor glucose in diabetic patients'
+    ],
+    postProcedureCare: [
+      'Keep head of bed elevated as ordered',
+      'Monitor for signs of aspiration',
+      'Track intake and output',
+      'Assess for bowel sounds and abdominal distension'
+    ],
+    documentation: [
+      'Type and amount of formula administered',
+      'Rate of administration (if continuous)',
+      'Tube placement verification method and findings',
+      'Gastric residual volume and action taken',
+      'Patient tolerance and any complications',
+      'Flush amount given'
+    ],
+    commonErrors: [
+      'Feeding without confirming placement',
+      'Not checking residuals',
+      'Formula hanging too long (bacterial growth)',
+      'Forgetting to flush tube (leads to clogging)',
+      'Head of bed not elevated'
+    ],
+    tips: [
+      'Flush with water before and after medications',
+      'Don\'t mix medications with formula - give separately',
+      'Coca-Cola or meat tenderizer NOT recommended for clogs',
+      'Use warm water and gentle pressure for minor clogs'
+    ],
+    references: [
+      'ASPEN. (2023). Enteral Nutrition Practice Recommendations.',
+      'AACN. (2023). Verification of Feeding Tube Placement.',
+      'Bankhead, R., et al. (2009). ASPEN Enteral Nutrition Practice Guidelines.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '15-30 minutes'
+  },
+  {
+    id: 'pressure-injury-prevention',
+    title: 'Pressure Injury Prevention and Assessment',
+    category: 'Wound Care',
+    categorySlug: 'wound-care',
+    description: 'Pressure injury prevention involves systematic skin assessment, risk identification, and implementation of interventions to prevent tissue damage from sustained pressure. Early identification and intervention are key to prevention.',
+    indications: [
+      'All hospitalized patients (routine screening)',
+      'Immobile or bed-bound patients',
+      'Patients with decreased sensation',
+      'Patients with poor nutrition',
+      'Patients with incontinence',
+      'Critically ill patients',
+      'Post-surgical patients'
+    ],
+    contraindications: [
+      'None for prevention activities'
+    ],
+    equipment: [
+      'Pressure injury risk assessment tool (Braden Scale)',
+      'Skin assessment documentation form',
+      'Pressure redistribution surfaces as needed',
+      'Positioning devices (pillows, wedges, heel protectors)',
+      'Moisture barrier cream',
+      'Incontinence supplies',
+      'Good lighting for skin inspection',
+      'Turning schedule'
+    ],
+    preparation: [
+      'Review patient history and risk factors',
+      'Ensure adequate lighting',
+      'Gather assessment tools',
+      'Plan for patient privacy during skin inspection',
+      'Know facility-specific prevention protocol'
+    ],
+    steps: [
+      { step: 1, action: 'Complete pressure injury risk assessment (Braden Scale) on admission', rationale: 'Identifies at-risk patients requiring prevention interventions' },
+      { step: 2, action: 'Perform complete skin assessment, examining all bony prominences', rationale: 'Detects early skin changes before injury develops' },
+      { step: 3, action: 'Inspect sacrum, heels, elbows, shoulders, back of head, ears', rationale: 'These are highest-risk areas for pressure injury development' },
+      { step: 4, action: 'Note any areas of redness, warmth, edema, or skin breakdown', rationale: 'Early signs indicate need for intervention' },
+      { step: 5, action: 'For darkly pigmented skin, assess for changes in color, temperature, and texture', rationale: 'Erythema may not be visible; other signs are more reliable' },
+      { step: 6, action: 'Determine if redness is blanchable or non-blanchable', rationale: 'Non-blanchable erythema indicates Stage 1 pressure injury' },
+      { step: 7, action: 'Implement appropriate pressure redistribution surface', rationale: 'Reduces interface pressure below capillary closing pressure' },
+      { step: 8, action: 'Reposition patient at least every 2 hours or per protocol', rationale: 'Relieves sustained pressure and restores blood flow' },
+      { step: 9, action: 'Use 30-degree lateral positioning, avoid 90-degree side-lying', rationale: 'Reduces pressure over trochanters' },
+      { step: 10, action: 'Keep heels completely off bed using pillows or heel protectors', rationale: 'Heels have minimal tissue over bone, high injury risk' },
+      { step: 11, action: 'Manage moisture from incontinence, perspiration, or wound drainage', rationale: 'Moisture increases friction and skin vulnerability' },
+      { step: 12, action: 'Apply moisture barrier to at-risk skin areas', rationale: 'Protects skin from moisture damage' },
+      { step: 13, action: 'Ensure adequate nutrition and hydration', rationale: 'Malnutrition impairs tissue tolerance and healing' },
+      { step: 14, action: 'Document all findings and interventions', rationale: 'Ensures continuity and tracks skin status' }
+    ],
+    safetyAlerts: [
+      'Do NOT massage reddened areas - can cause additional tissue damage',
+      'Do NOT use donut-type devices - they create pressure around the wound',
+      'Report any new skin breakdown to physician immediately',
+      'Patients with sensory deficits cannot feel pressure - increase monitoring'
+    ],
+    nursingConsiderations: [
+      'Reassess Braden Score with any change in condition',
+      'Use lift sheets to reposition - avoid dragging',
+      'Consider nutrition consultation for at-risk patients',
+      'Involve patient and family in prevention strategies'
+    ],
+    postProcedureCare: [
+      'Continue regular repositioning schedule',
+      'Monitor effectiveness of interventions',
+      'Adjust prevention plan based on patient response',
+      'Communicate plan across shifts'
+    ],
+    documentation: [
+      'Braden Scale score and subscores',
+      'Complete skin assessment findings',
+      'Description of any skin changes (location, size, stage if applicable)',
+      'Prevention interventions in place',
+      'Repositioning schedule and adherence',
+      'Patient and family education provided'
+    ],
+    commonErrors: [
+      'Massaging areas of non-blanchable redness',
+      'Infrequent repositioning',
+      'Not inspecting under medical devices',
+      'Underestimating risk in patients who can ambulate minimally',
+      'Not floating heels adequately'
+    ],
+    tips: [
+      'Use 30-degree tilt rather than full side-lying when possible',
+      'Inspect under devices (O2 tubing, splints, TED stockings) regularly',
+      'Chair-bound patients need off-loading every 15 minutes',
+      'Take photos of skin changes for documentation per policy'
+    ],
+    references: [
+      'NPIAP. (2019). Prevention and Treatment of Pressure Ulcers/Injuries: Clinical Practice Guideline.',
+      'Braden, B., & Bergstrom, N. (1987). Braden Scale for Predicting Pressure Sore Risk.',
+      'AHRQ. (2023). Preventing Pressure Ulcers in Hospitals Toolkit.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '15-20 minutes for full assessment'
+  },
+  {
+    id: 'pain-assessment',
+    title: 'Comprehensive Pain Assessment',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Pain assessment is the systematic evaluation of a patient\'s pain experience, including intensity, location, quality, and impact on function. Accurate assessment is essential for effective pain management and is considered the "fifth vital sign."',
+    indications: [
+      'All patient admissions',
+      'Routine vital sign assessment',
+      'Before and after pain interventions',
+      'Change in patient condition',
+      'Post-operative monitoring',
+      'Patient report of pain or discomfort'
+    ],
+    contraindications: [
+      'None for assessment - all patients deserve pain evaluation'
+    ],
+    equipment: [
+      'Appropriate pain assessment scale:',
+      '- Numeric Rating Scale (NRS) 0-10',
+      '- Wong-Baker FACES Scale (pediatric/cognitively impaired)',
+      '- FLACC Scale (nonverbal patients)',
+      '- Critical Care Pain Observation Tool (CPOT)',
+      'Documentation materials'
+    ],
+    preparation: [
+      'Select appropriate assessment tool for patient population',
+      'Ensure privacy and comfortable environment',
+      'Allow adequate time for patient to respond',
+      'Consider cultural factors affecting pain expression'
+    ],
+    steps: [
+      { step: 1, action: 'Introduce purpose of assessment and assure patient their pain will be addressed', rationale: 'Establishes trust and encourages honest reporting' },
+      { step: 2, action: 'Ask patient to rate pain intensity using appropriate scale (0-10)', rationale: 'Quantifies pain for tracking and treatment decisions' },
+      { step: 3, action: 'Ask patient to point to or describe pain location(s)', rationale: 'Identifies affected areas and possible causes' },
+      { step: 4, action: 'Have patient describe quality of pain (sharp, dull, burning, aching)', rationale: 'Quality helps identify pain type and etiology' },
+      { step: 5, action: 'Determine onset: When did pain start? What were you doing?', rationale: 'Identifies precipitating factors' },
+      { step: 6, action: 'Assess duration: Is pain constant or intermittent?', rationale: 'Guides treatment approach' },
+      { step: 7, action: 'Identify aggravating factors: What makes pain worse?', rationale: 'Helps avoid triggers and guides activity modifications' },
+      { step: 8, action: 'Identify alleviating factors: What helps reduce pain?', rationale: 'Incorporates effective strategies into care plan' },
+      { step: 9, action: 'Ask about radiation: Does pain travel or spread anywhere?', rationale: 'May indicate referred pain or nerve involvement' },
+      { step: 10, action: 'Assess effect on function: How does pain affect daily activities, sleep, mood?', rationale: 'Determines impact on quality of life' },
+      { step: 11, action: 'For nonverbal patients: observe for behavioral indicators', rationale: 'Facial grimacing, guarding, restlessness indicate pain' },
+      { step: 12, action: 'Document using PQRST or OLDCARTS framework', rationale: 'Ensures comprehensive, standardized documentation' },
+      { step: 13, action: 'Develop pain management plan with patient', rationale: 'Patient involvement improves outcomes' },
+      { step: 14, action: 'Reassess pain after intervention (30-60 min for meds, 15-30 min for IV)', rationale: 'Evaluates effectiveness of treatment' }
+    ],
+    safetyAlerts: [
+      'Sudden severe pain may indicate emergency (MI, ruptured aneurysm, bowel obstruction)',
+      'Patients may underreport pain due to cultural beliefs or fear of addiction',
+      'Elderly patients may present atypically - monitor for behavioral changes',
+      'Never dismiss patient report of pain - pain is what patient says it is'
+    ],
+    nursingConsiderations: [
+      'Pain is subjective - patient is the authority on their pain',
+      'Consider cultural influences on pain expression',
+      'Assess pain regularly and with each vital sign check',
+      'Use age and cognitively appropriate tools'
+    ],
+    postProcedureCare: [
+      'Implement multimodal pain management approach',
+      'Educate patient about pain medications and non-pharmacologic options',
+      'Set realistic pain management goals with patient',
+      'Schedule regular reassessments'
+    ],
+    documentation: [
+      'Pain intensity rating (number or descriptor)',
+      'Location(s) and quality of pain',
+      'Onset, duration, and pattern',
+      'Aggravating and alleviating factors',
+      'Effect on function and quality of life',
+      'Interventions provided and patient response',
+      'Patient\'s pain goal'
+    ],
+    commonErrors: [
+      'Not believing patient\'s report of pain',
+      'Not reassessing after intervention',
+      'Using wrong assessment tool for patient population',
+      'Documenting own interpretation instead of patient\'s words',
+      'Assuming sleeping patient is not in pain'
+    ],
+    tips: [
+      'Use PQRST: Provokes, Quality, Radiates, Severity, Time',
+      'Ask "How is your comfort?" as alternative to "pain"',
+      'Consider that "acceptable pain level" differs by patient',
+      'Include non-pharmacologic interventions in plan'
+    ],
+    references: [
+      'American Pain Society. (2016). Principles of Analgesic Use.',
+      'The Joint Commission. (2023). Pain Assessment and Management Standards.',
+      'IASP. (2020). Revised Definition of Pain.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '5-10 minutes'
+  },
+  {
+    id: 'fall-prevention',
+    title: 'Fall Risk Assessment and Prevention',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Fall prevention involves systematic risk assessment and implementation of interventions to reduce patient falls in healthcare settings. Falls are a leading cause of hospital-acquired injury and are largely preventable.',
+    indications: [
+      'All hospitalized patients on admission',
+      'Transfer from another unit',
+      'Change in patient condition',
+      'Post-procedure or after medication changes',
+      'After a fall or near-fall event',
+      'Per facility policy intervals'
+    ],
+    contraindications: [
+      'None - all patients require fall risk assessment'
+    ],
+    equipment: [
+      'Fall risk assessment tool (Morse Fall Scale, Hendrich II)',
+      'Yellow fall risk identification items:',
+      '- Yellow wristband',
+      '- Yellow non-skid socks',
+      '- Yellow blanket or magnet for room',
+      'Bed alarm system',
+      'Chair alarm if applicable',
+      'Ambulatory aids if needed',
+      'Hip protectors for high-risk patients'
+    ],
+    preparation: [
+      'Review patient history for fall risk factors',
+      'Obtain appropriate assessment tool',
+      'Know facility fall prevention protocol',
+      'Prepare identification and prevention supplies'
+    ],
+    steps: [
+      { step: 1, action: 'Complete fall risk assessment using facility-approved tool', rationale: 'Identifies patients at risk requiring interventions' },
+      { step: 2, action: 'Assess history of falls within past year', rationale: 'Prior falls are strongest predictor of future falls' },
+      { step: 3, action: 'Evaluate secondary diagnoses (weakness, incontinence, confusion)', rationale: 'Multiple conditions increase fall risk' },
+      { step: 4, action: 'Review medications for fall-risk drugs (sedatives, antihypertensives, diuretics)', rationale: 'Medications contribute significantly to fall risk' },
+      { step: 5, action: 'Assess ambulation and transfer ability', rationale: 'Determines need for assistance and aids' },
+      { step: 6, action: 'Evaluate mental status and awareness of limitations', rationale: 'Confusion increases risk due to impaired judgment' },
+      { step: 7, action: 'Apply yellow fall risk identifiers for at-risk patients', rationale: 'Visual cues alert all staff to patient\'s fall risk' },
+      { step: 8, action: 'Ensure call light is within reach and patient knows how to use it', rationale: 'Enables patient to call for assistance' },
+      { step: 9, action: 'Keep bed in lowest position with wheels locked', rationale: 'Reduces injury if fall occurs' },
+      { step: 10, action: 'Activate bed alarm for high-risk patients', rationale: 'Alerts staff when patient attempts to exit bed' },
+      { step: 11, action: 'Ensure non-skid footwear is worn during ambulation', rationale: 'Reduces slipping risk' },
+      { step: 12, action: 'Clear pathway of clutter, cords, and obstacles', rationale: 'Removes tripping hazards' },
+      { step: 13, action: 'Ensure adequate lighting, especially at night', rationale: 'Poor visibility contributes to falls' },
+      { step: 14, action: 'Toilet patient on regular schedule if incontinent', rationale: 'Rushing to bathroom increases fall risk' },
+      { step: 15, action: 'Round hourly on high-risk patients', rationale: 'Proactive care addresses needs before patient attempts independently' },
+      { step: 16, action: 'Educate patient and family on fall prevention', rationale: 'Involves patient in own safety' }
+    ],
+    safetyAlerts: [
+      'Patients receiving new medications (especially sedatives) need immediate reassessment',
+      'Post-procedure patients may have temporary increased risk',
+      'Patients who refuse interventions need documentation and alternative approaches',
+      'Near-falls require same response as actual falls'
+    ],
+    nursingConsiderations: [
+      'Reassess fall risk with any change in condition',
+      'Balance fall prevention with patient mobility needs',
+      'Consider physical therapy consultation for gait issues',
+      'Involve patient in setting mobility goals'
+    ],
+    postProcedureCare: [
+      'If fall occurs: assess for injury, notify physician, complete incident report',
+      'Implement post-fall huddle to identify contributing factors',
+      'Update care plan based on assessment findings',
+      'Communicate fall risk status at handoff'
+    ],
+    documentation: [
+      'Fall risk score and risk level',
+      'Specific risk factors identified',
+      'Prevention interventions implemented',
+      'Patient and family education provided',
+      'If fall occurs: complete incident report with details'
+    ],
+    commonErrors: [
+      'Not reassessing after condition or medication changes',
+      'Bed alarm not activated or not audible',
+      'Call light out of reach',
+      'Not involving patient in prevention plan',
+      'Assuming low-risk patients won\'t fall'
+    ],
+    tips: [
+      'Cluster care to reduce number of bed exits',
+      'Consider 1:1 sitter for highest risk patients',
+      'Address modifiable risk factors (medication review, PT)',
+      'Make prevention interventions part of routine care'
+    ],
+    references: [
+      'AHRQ. (2023). Preventing Falls in Hospitals Toolkit.',
+      'The Joint Commission. (2023). Fall Prevention Standards.',
+      'Morse, J.M. (2008). Preventing Patient Falls.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '10-15 minutes for full assessment'
+  },
+  {
+    id: 'medication-reconciliation',
+    title: 'Medication Reconciliation',
+    category: 'Medication Administration',
+    categorySlug: 'medication-administration',
+    description: 'Medication reconciliation is the process of comparing a patient\'s current medication orders against all medications the patient has been taking to identify and resolve discrepancies. This process occurs at every transition of care.',
+    indications: [
+      'Hospital admission',
+      'Transfer between units or facilities',
+      'Discharge from hospital',
+      'Change in level of care',
+      'After procedure requiring anesthesia',
+      'Clinic visits with medication changes'
+    ],
+    contraindications: [
+      'None - required for all patients at transitions of care'
+    ],
+    equipment: [
+      'Current medication list from medical record',
+      'Medication history form',
+      'Pharmacy resources for drug identification',
+      'Access to prescription monitoring database',
+      'Patient\'s medication bottles if available'
+    ],
+    preparation: [
+      'Review patient chart for existing medication information',
+      'Gather any outside records or medication lists',
+      'Allow adequate time for thorough interview',
+      'Prepare documentation form'
+    ],
+    steps: [
+      { step: 1, action: 'Introduce self and explain importance of accurate medication list', rationale: 'Patient understanding improves participation' },
+      { step: 2, action: 'Ask patient to list all medications they take at home', rationale: 'Patient is primary source for actual medication use' },
+      { step: 3, action: 'For each medication, ask: name, dose, frequency, route, reason for taking', rationale: 'Complete information prevents errors' },
+      { step: 4, action: 'Ask about prescription medications from all providers', rationale: 'Patients often see multiple prescribers' },
+      { step: 5, action: 'Ask specifically about over-the-counter medications', rationale: 'OTCs can cause interactions and are often forgotten' },
+      { step: 6, action: 'Ask about vitamins, supplements, and herbal products', rationale: 'These can interact with prescription medications' },
+      { step: 7, action: 'Ask about PRN medications and actual use patterns', rationale: 'Actual use may differ from prescribed' },
+      { step: 8, action: 'Ask about any recently stopped or changed medications', rationale: 'Recent changes are important clinical information' },
+      { step: 9, action: 'Verify allergies and type of reaction', rationale: 'Prevents administration of contraindicated medications' },
+      { step: 10, action: 'Compare obtained list with medication orders', rationale: 'Identifies discrepancies requiring resolution' },
+      { step: 11, action: 'Identify discrepancies: omissions, additions, duplications, interactions', rationale: 'Categories guide resolution approach' },
+      { step: 12, action: 'Clarify discrepancies with patient or provider', rationale: 'Some may be intentional; others are errors' },
+      { step: 13, action: 'Document reconciled medication list in chart', rationale: 'Creates accurate record for all caregivers' },
+      { step: 14, action: 'Communicate unresolved issues to physician', rationale: 'Physician must make prescribing decisions' },
+      { step: 15, action: 'At discharge: provide updated medication list to patient', rationale: 'Patient needs accurate list for home use' }
+    ],
+    safetyAlerts: [
+      'High-alert medications (anticoagulants, insulin, opioids) require extra verification',
+      'Similar medication names (sound-alike, look-alike) require careful confirmation',
+      'New allergies or adverse reactions must be documented immediately',
+      'Discrepancies involving controlled substances require immediate clarification'
+    ],
+    nursingConsiderations: [
+      'Use teach-back method to verify patient understanding',
+      'Include family members when patient is cognitively impaired',
+      'Consider pharmacy consultation for complex regimens',
+      'Use pill identification resources when needed'
+    ],
+    postProcedureCare: [
+      'Ensure reconciled list is available to all care team members',
+      'Provide written medication list to patient at discharge',
+      'Review discharge medications with patient and family',
+      'Arrange follow-up for ongoing medication management'
+    ],
+    documentation: [
+      'Complete home medication list with doses and frequencies',
+      'Source of medication information',
+      'Allergies and reactions',
+      'Discrepancies identified and how resolved',
+      'Patient education provided'
+    ],
+    commonErrors: [
+      'Not asking about OTC and herbal products',
+      'Not verifying actual adherence patterns',
+      'Not reconciling at every transition',
+      'Not providing written list at discharge',
+      'Assuming chart is accurate without verification'
+    ],
+    tips: [
+      'Ask "brown bag" patients to bring all medication containers',
+      'Contact pharmacy if uncertain about home medications',
+      'Use open-ended questions rather than yes/no',
+      'Schedule enough time - rushing leads to errors'
+    ],
+    references: [
+      'The Joint Commission. (2023). National Patient Safety Goals.',
+      'ISMP. (2023). Medication Reconciliation Best Practices.',
+      'WHO. (2019). Medication Safety in Transitions of Care.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '15-30 minutes'
+  },
+  {
+    id: 'incentive-spirometry',
+    title: 'Incentive Spirometry Teaching',
+    category: 'Oxygen Therapy',
+    categorySlug: 'oxygen-therapy',
+    description: 'Incentive spirometry is a breathing exercise using a device that encourages sustained maximal inspiration to prevent or treat atelectasis. Patient education and proper technique are essential for effectiveness.',
+    indications: [
+      'Post-operative patients (especially abdominal, thoracic surgery)',
+      'Patients at risk for atelectasis',
+      'Prolonged bed rest or immobility',
+      'Neuromuscular weakness',
+      'Chronic lung disease exacerbations',
+      'Pre-operative teaching'
+    ],
+    contraindications: [
+      'Hemoptysis (active coughing of blood)',
+      'Untreated pneumothorax',
+      'Acute asthma exacerbation',
+      'Patients unable to follow instructions'
+    ],
+    equipment: [
+      'Incentive spirometer device',
+      'Tissues',
+      'Pillow for splinting (surgical patients)',
+      'Teaching materials if available'
+    ],
+    preparation: [
+      'Check order or protocol for incentive spirometry',
+      'Select appropriate device',
+      'Ensure patient is not in acute respiratory distress',
+      'Position patient upright (sitting preferred)',
+      'Administer pain medication 30 minutes before for surgical patients'
+    ],
+    steps: [
+      { step: 1, action: 'Explain purpose: to keep lungs expanded and prevent complications', rationale: 'Patient understanding improves adherence' },
+      { step: 2, action: 'Set goal marker based on patient\'s age, size, and condition', rationale: 'Realistic goals motivate patient' },
+      { step: 3, action: 'Have patient hold spirometer upright', rationale: 'Device must be level for accurate measurement' },
+      { step: 4, action: 'Instruct patient to exhale normally', rationale: 'Prepares for maximal inspiration' },
+      { step: 5, action: 'Place mouthpiece in mouth and seal lips tightly', rationale: 'Prevents air leak which reduces effectiveness' },
+      { step: 6, action: 'Instruct to inhale slowly and deeply through mouth', rationale: 'Slow inhalation ensures alveoli are fully inflated' },
+      { step: 7, action: 'Watch indicator rise - encourage reaching goal marker', rationale: 'Visual feedback motivates patient' },
+      { step: 8, action: 'Have patient hold breath for 3-5 seconds at maximum inspiration', rationale: 'Sustained inspiration opens collapsed alveoli' },
+      { step: 9, action: 'Remove mouthpiece and exhale normally', rationale: 'Controlled exhalation is comfortable' },
+      { step: 10, action: 'Rest for several breaths before repeating', rationale: 'Prevents hyperventilation and lightheadedness' },
+      { step: 11, action: 'Have patient perform 10-15 breaths per session', rationale: 'Adequate repetitions for therapeutic benefit' },
+      { step: 12, action: 'Encourage use every 1-2 hours while awake', rationale: 'Frequency is key to preventing atelectasis' },
+      { step: 13, action: 'For surgical patients: teach splinting with pillow during coughing', rationale: 'Reduces incisional pain and improves cough effectiveness' },
+      { step: 14, action: 'Document teaching, goal, and patient demonstration', rationale: 'Tracks education and competency' }
+    ],
+    safetyAlerts: [
+      'Stop if patient becomes dizzy or lightheaded',
+      'Do not use if patient has active hemoptysis',
+      'Pain control is essential for surgical patients to participate effectively',
+      'Supervise closely in patients with cognitive impairment'
+    ],
+    nursingConsiderations: [
+      'Schedule before meals to prevent nausea',
+      'Coordinate with pain medication timing',
+      'Validate patient technique each shift initially',
+      'Auscultate lungs to assess effectiveness'
+    ],
+    postProcedureCare: [
+      'Leave spirometer at bedside within patient reach',
+      'Post reminder signs if helpful',
+      'Encourage ambulation to complement spirometry',
+      'Monitor oxygen saturation'
+    ],
+    documentation: [
+      'Patient teaching provided and return demonstration',
+      'Goal volume set and achieved',
+      'Number of breaths performed',
+      'Patient tolerance',
+      'Lung sounds before and after'
+    ],
+    commonErrors: [
+      'Inhaling too fast (ball/piston rises too quickly)',
+      'Not holding breath at peak inspiration',
+      'Exhaling through device',
+      'Not performing frequently enough',
+      'Not using pillow to splint incision'
+    ],
+    tips: [
+      'Compare to "sucking through a straw" for patient understanding',
+      'Place spirometer visible as reminder to use',
+      'Encourage family to remind and assist patient',
+      'Progress goal as patient improves'
+    ],
+    references: [
+      'AARC. (2011). Incentive Spirometry Clinical Practice Guideline.',
+      'Restrepo, R., et al. (2011). Incentive Spirometry Update.',
+      'Lewis, S.L., et al. (2023). Medical-Surgical Nursing, 12th ed.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '10-15 minutes for teaching'
   }
 ];
 
