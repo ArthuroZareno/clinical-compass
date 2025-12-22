@@ -4118,6 +4118,1208 @@ export const procedures: Procedure[] = [
     ],
     difficulty: 'intermediate',
     estimatedTime: '10-15 minutes'
+  },
+  {
+    id: 'blood-transfusion-administration',
+    title: 'Blood Transfusion Administration',
+    category: 'IV Therapy',
+    categorySlug: 'iv-therapy',
+    description: 'Blood transfusion involves the intravenous administration of blood products including packed red blood cells, platelets, plasma, or other components. This life-saving procedure requires strict identification protocols and continuous monitoring for transfusion reactions.',
+    indications: [
+      'Acute blood loss from trauma or surgery',
+      'Symptomatic anemia (hemoglobin <7-8 g/dL)',
+      'Coagulopathies requiring component therapy',
+      'Thrombocytopenia with bleeding',
+      'Massive transfusion protocol activation',
+      'Chronic anemia not responsive to other treatment'
+    ],
+    contraindications: [
+      'Patient refusal (Jehovah\'s Witness beliefs)',
+      'Known severe allergic reaction to blood products',
+      'Circulatory overload risk in heart failure',
+      'Hemolytic transfusion reaction history without proper typing'
+    ],
+    equipment: [
+      'Blood product from blood bank (verified)',
+      'Blood administration set with filter',
+      'Normal saline 0.9% for priming and flush',
+      'IV pole',
+      'Blood warmer (if rapid infusion needed)',
+      'Vital signs equipment',
+      'Two forms of patient identification',
+      'Blood bank slip and compatibility tag'
+    ],
+    preparation: [
+      'Verify physician order for transfusion',
+      'Ensure informed consent is signed',
+      'Obtain baseline vital signs including temperature',
+      'Ensure patent IV access (18-20 gauge preferred)',
+      'Obtain blood product from blood bank',
+      'Check expiration date and integrity of bag'
+    ],
+    steps: [
+      { step: 1, action: 'Two licensed personnel verify patient identity using two identifiers', rationale: 'Most critical step to prevent ABO incompatibility reactions' },
+      { step: 2, action: 'Verify blood product matches patient name, DOB, MRN on blood bank tag', rationale: 'Prevents administration of wrong blood type' },
+      { step: 3, action: 'Confirm blood type and Rh factor match or are compatible', rationale: 'ABO/Rh mismatch can cause fatal hemolytic reactions' },
+      { step: 4, action: 'Check unit number on bag matches blood bank slip exactly', rationale: 'Ensures correct unit is being administered' },
+      { step: 5, action: 'Inspect blood bag for discoloration, clots, or leakage', rationale: 'Compromised products can cause sepsis or reaction' },
+      { step: 6, action: 'Both nurses sign verification form', rationale: 'Documents proper verification was performed' },
+      { step: 7, action: 'Prime blood tubing with normal saline only', rationale: 'Other solutions cause hemolysis of red cells' },
+      { step: 8, action: 'Take baseline vital signs immediately before starting', rationale: 'Provides comparison for monitoring reactions' },
+      { step: 9, action: 'Begin infusion slowly (25-50 mL over first 15 minutes)', rationale: 'Most severe reactions occur in first 15-50 mL' },
+      { step: 10, action: 'Remain with patient for first 15 minutes of transfusion', rationale: 'Allows immediate response to acute reactions' },
+      { step: 11, action: 'Take vital signs at 15 minutes into transfusion', rationale: 'Detects early signs of transfusion reaction' },
+      { step: 12, action: 'Increase to prescribed rate if tolerated (usually 2-4 hours for PRBCs)', rationale: 'Slower rates reduce risk of volume overload' },
+      { step: 13, action: 'Monitor vital signs per protocol (typically every 30-60 minutes)', rationale: 'Reactions can occur at any time during transfusion' },
+      { step: 14, action: 'Complete transfusion within 4 hours of hanging', rationale: 'Bacterial growth risk increases after 4 hours' },
+      { step: 15, action: 'Flush line with NS and obtain post-transfusion vital signs', rationale: 'Documents patient status after transfusion' }
+    ],
+    safetyAlerts: [
+      'STOP TRANSFUSION immediately for: fever >1°C rise, chills, rigors, hives, hypotension, dyspnea, chest/back pain',
+      'ABO incompatibility can be fatal within minutes - verify identity at bedside',
+      'Never add medications to blood or through blood tubing',
+      'Blood must be infused within 4 hours of leaving blood bank',
+      'Notify blood bank immediately of any suspected reaction'
+    ],
+    nursingConsiderations: [
+      'Some facilities require RN verification only; know your policy',
+      'Patients with cardiac history may need slower infusion rates',
+      'Premedication (diphenhydramine, acetaminophen) may be ordered',
+      'Leukocyte-reduced products reduce febrile reactions'
+    ],
+    postProcedureCare: [
+      'Document completion of transfusion',
+      'Monitor for delayed reactions (hours to days later)',
+      'Obtain post-transfusion labs as ordered',
+      'Dispose of blood bag per facility policy',
+      'Continue hemodynamic monitoring'
+    ],
+    documentation: [
+      'Blood product type and unit number',
+      'Both verifiers\' signatures',
+      'Start and end times of transfusion',
+      'Vital signs before, during, and after',
+      'Total volume infused',
+      'Patient tolerance and any reactions'
+    ],
+    commonErrors: [
+      'Failing to use two patient identifiers',
+      'Single nurse verification (unless policy allows)',
+      'Adding medications to blood products',
+      'Using dextrose solutions (causes hemolysis)',
+      'Exceeding 4-hour hang time',
+      'Not remaining with patient first 15 minutes'
+    ],
+    tips: [
+      'Blood warmers prevent hypothermia in rapid/massive transfusion',
+      'Platelets infuse rapidly (15-30 minutes) - don\'t leave unattended',
+      'FFP must be thawed before use - coordinate with blood bank',
+      'Keep blood bank phone number readily accessible'
+    ],
+    references: [
+      'AABB. (2023). Technical Manual, 21st ed.',
+      'Joint Commission. (2024). Blood Transfusion Safety Standards.',
+      'INS. (2024). Infusion Therapy Standards of Practice.'
+    ],
+    difficulty: 'advanced',
+    estimatedTime: '2-4 hours'
+  },
+  {
+    id: 'chest-physiotherapy',
+    title: 'Chest Physiotherapy (CPT)',
+    category: 'Oxygen Therapy',
+    categorySlug: 'oxygen-therapy',
+    description: 'Chest physiotherapy uses positioning, percussion, and vibration techniques to mobilize and drain pulmonary secretions. It is used to prevent and treat atelectasis, improve ventilation, and facilitate secretion clearance in patients with excessive mucus production.',
+    indications: [
+      'Cystic fibrosis',
+      'Chronic bronchitis with excessive secretions',
+      'Bronchiectasis',
+      'Atelectasis',
+      'Pneumonia with retained secretions',
+      'Post-operative patients at risk for atelectasis',
+      'Mechanically ventilated patients'
+    ],
+    contraindications: [
+      'Unstable cardiovascular status',
+      'Recent myocardial infarction',
+      'Pulmonary embolism',
+      'Increased intracranial pressure',
+      'Rib fractures or chest trauma',
+      'Hemoptysis',
+      'Severe osteoporosis',
+      'Active hemorrhage'
+    ],
+    equipment: [
+      'Cupped hands or mechanical percussor',
+      'Pillows for positioning',
+      'Suction equipment (if needed)',
+      'Tissues or specimen container',
+      'Stethoscope',
+      'Pulse oximeter'
+    ],
+    preparation: [
+      'Assess breath sounds and oxygen saturation',
+      'Review chest X-ray to identify affected lung areas',
+      'Schedule 1-2 hours after meals or 30 minutes before meals',
+      'Premedicate for pain if ordered',
+      'Administer bronchodilator 15-20 minutes before if ordered',
+      'Explain procedure and expected sensations'
+    ],
+    steps: [
+      { step: 1, action: 'Position patient with affected lung segment uppermost', rationale: 'Gravity assists drainage from affected areas' },
+      { step: 2, action: 'Maintain each drainage position for 10-15 minutes', rationale: 'Allows adequate time for secretion mobilization' },
+      { step: 3, action: 'Cup hands (fingers together, thumbs tucked) for percussion', rationale: 'Creates air pocket that transmits energy to loosen secretions' },
+      { step: 4, action: 'Percuss over affected area in rhythmic pattern for 3-5 minutes', rationale: 'Vibrations loosen adherent secretions from airway walls' },
+      { step: 5, action: 'Avoid percussion over spine, sternum, kidneys, or surgical sites', rationale: 'Prevents injury to underlying structures' },
+      { step: 6, action: 'Follow percussion with vibration during exhalation', rationale: 'Shaking motion moves secretions toward larger airways' },
+      { step: 7, action: 'Instruct patient to take deep breaths and cough effectively', rationale: 'Deep breathing and coughing expel loosened secretions' },
+      { step: 8, action: 'Teach "huff" coughing technique if needed', rationale: 'Less tiring than forceful coughing, still effective' },
+      { step: 9, action: 'Provide tissues or container for expectorated secretions', rationale: 'Allows collection for assessment and specimen' },
+      { step: 10, action: 'Move to next position for different lung segment', rationale: 'Treats all affected areas systematically' },
+      { step: 11, action: 'Monitor oxygen saturation throughout procedure', rationale: 'Detects desaturation requiring intervention' },
+      { step: 12, action: 'Auscultate breath sounds after treatment', rationale: 'Assesses effectiveness of secretion clearance' }
+    ],
+    safetyAlerts: [
+      'Stop immediately if severe dyspnea, chest pain, or hemoptysis occurs',
+      'Watch for aspiration in patients with impaired gag reflex',
+      'Trendelenburg position contraindicated in increased ICP',
+      'Monitor for cardiac arrhythmias in susceptible patients'
+    ],
+    nursingConsiderations: [
+      'Coordinate with respiratory therapy if available',
+      'Effective coughing requires adequate pain control',
+      'Some patients tolerate treatment better in morning',
+      'Frequency depends on secretion volume (2-4 times daily typical)'
+    ],
+    postProcedureCare: [
+      'Keep patient upright for 30 minutes after treatment',
+      'Provide oral hygiene',
+      'Document color, consistency, and amount of secretions',
+      'Continue supplemental oxygen as ordered'
+    ],
+    documentation: [
+      'Lung segments treated and positions used',
+      'Duration of treatment',
+      'Characteristics of secretions produced',
+      'Patient tolerance',
+      'Pre and post breath sounds',
+      'Oxygen saturation before and after'
+    ],
+    commonErrors: [
+      'Performing on full stomach (aspiration risk)',
+      'Percussing over bony prominences',
+      'Inadequate time in each position',
+      'Not encouraging effective coughing',
+      'Forgetting to reassess breath sounds'
+    ],
+    tips: [
+      'A hollow, popping sound indicates correct percussion technique',
+      'Mechanical percussors available for prolonged therapy',
+      'Flutter valves and PEP devices are alternatives for self-treatment',
+      'Adequate hydration helps thin secretions'
+    ],
+    references: [
+      'AARC. (2020). Postural Drainage Therapy Clinical Practice Guideline.',
+      'Hess, D.R. (2023). Respiratory Care Principles and Practice.',
+      'Perry, A.G., & Potter, P.A. (2023). Clinical Nursing Skills & Techniques.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '30-45 minutes'
+  },
+  {
+    id: 'preoperative-preparation',
+    title: 'Preoperative Patient Preparation',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Preoperative preparation ensures patient safety before surgery through comprehensive assessment, patient teaching, and completion of required protocols. Thorough preparation reduces surgical complications and improves patient outcomes.',
+    indications: [
+      'Any patient scheduled for surgical procedure',
+      'Invasive diagnostic procedures requiring anesthesia',
+      'Day surgery patients',
+      'Emergency surgical patients (modified protocol)'
+    ],
+    contraindications: [
+      'Surgery may be postponed for acute illness',
+      'Abnormal laboratory values requiring correction',
+      'Inadequate NPO status for non-emergent procedures',
+      'Lack of informed consent'
+    ],
+    equipment: [
+      'Hospital gown and non-slip socks',
+      'Patient identification band',
+      'Allergy band (if applicable)',
+      'Preoperative checklist form',
+      'Antiseptic skin wipes or soap',
+      'Hair covering cap',
+      'Compression stockings or SCDs',
+      'IV start supplies'
+    ],
+    preparation: [
+      'Review surgical consent for completeness and patient signature',
+      'Verify surgical site marking by surgeon (if applicable)',
+      'Review preoperative orders',
+      'Confirm allergies and update allergy band',
+      'Gather preoperative lab results and imaging'
+    ],
+    steps: [
+      { step: 1, action: 'Verify patient identity using two identifiers', rationale: 'Prevents wrong-patient surgery' },
+      { step: 2, action: 'Confirm surgical procedure and site matches consent', rationale: 'Prevents wrong-site, wrong-procedure errors' },
+      { step: 3, action: 'Verify NPO status (typically 8 hours solid food, 2 hours clear liquids)', rationale: 'Reduces aspiration risk during anesthesia' },
+      { step: 4, action: 'Complete preoperative physical assessment', rationale: 'Identifies any new concerns that could affect surgery' },
+      { step: 5, action: 'Review and document allergies prominently', rationale: 'Prevents allergic reactions during surgery' },
+      { step: 6, action: 'Obtain baseline vital signs', rationale: 'Provides comparison for intraoperative monitoring' },
+      { step: 7, action: 'Verify lab work is completed and reviewed', rationale: 'Abnormal values may require correction before surgery' },
+      { step: 8, action: 'Confirm blood type and screen/crossmatch if ordered', rationale: 'Ensures blood available if needed during surgery' },
+      { step: 9, action: 'Have patient void before premedication', rationale: 'Empty bladder reduces injury risk and discomfort' },
+      { step: 10, action: 'Assist patient to remove jewelry, dentures, prosthetics', rationale: 'Prevents loss, damage, or airway obstruction' },
+      { step: 11, action: 'Document disposition of valuables', rationale: 'Prevents loss and patient anxiety' },
+      { step: 12, action: 'Apply hospital gown, hair cover, and antiembolic devices', rationale: 'Prepares for surgical environment and prevents DVT' },
+      { step: 13, action: 'Administer preoperative medications as ordered', rationale: 'Reduces anxiety and provides prophylaxis' },
+      { step: 14, action: 'Complete surgical safety checklist', rationale: 'Standardized verification prevents errors' },
+      { step: 15, action: 'Provide emotional support to patient and family', rationale: 'Reduces anxiety and improves surgical outcomes' }
+    ],
+    safetyAlerts: [
+      'Surgical site must be marked by surgeon before leaving floor',
+      'NPO violation requires notification to surgical team',
+      'Allergy to latex requires special OR preparation',
+      'Anticoagulant status must be verified and documented',
+      'Pregnancy test required for females of childbearing age'
+    ],
+    nursingConsiderations: [
+      'Time-out verification occurs in OR before incision',
+      'Some medications continued; others held (follow orders)',
+      'Patients with diabetes need glucose monitoring and modified insulin',
+      'Cultural and religious considerations may affect preparation'
+    ],
+    postProcedureCare: [
+      'Ensure safe handoff to OR transport personnel',
+      'Complete handoff communication with OR nurse',
+      'Prepare room for patient return',
+      'Communicate with family about waiting area and updates'
+    ],
+    documentation: [
+      'Completed preoperative checklist',
+      'NPO status and time of last intake',
+      'Vital signs',
+      'Surgical site verification and marking confirmed',
+      'Disposition of valuables and prosthetics',
+      'Preoperative medications given',
+      'Patient teaching completed',
+      'Informed consent signed'
+    ],
+    commonErrors: [
+      'Forgetting to remove nail polish (pulse ox monitoring)',
+      'Not verifying NPO status with patient/family',
+      'Missing surgical site marking',
+      'Incomplete allergy documentation',
+      'Sending patient without complete chart'
+    ],
+    tips: [
+      'Use teach-back method to verify patient understanding',
+      'Keep family informed of surgery timeline expectations',
+      'Verify insurance precertification if applicable',
+      'Take extra time with anxious patients'
+    ],
+    references: [
+      'AORN. (2024). Guidelines for Perioperative Practice.',
+      'Joint Commission. (2024). Universal Protocol for Preventing Wrong Site Surgery.',
+      'Rothrock, J.C. (2023). Alexander\'s Care of the Patient in Surgery.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '45-60 minutes'
+  },
+  {
+    id: 'postoperative-assessment',
+    title: 'Postoperative Assessment and Care',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Postoperative assessment involves systematic evaluation of patient status following surgery. Early detection of complications through vigilant monitoring is essential for patient safety and optimal recovery.',
+    indications: [
+      'All patients following surgical procedures',
+      'Post-anesthesia recovery (PACU patients)',
+      'Transfer from PACU to nursing unit',
+      'Ongoing postoperative monitoring'
+    ],
+    contraindications: [
+      'None - assessment is always indicated post-surgery'
+    ],
+    equipment: [
+      'Vital signs equipment (BP cuff, pulse oximeter, thermometer)',
+      'Stethoscope',
+      'Penlight',
+      'Pain assessment scale',
+      'Intake/output tracking materials',
+      'Wound assessment supplies'
+    ],
+    preparation: [
+      'Receive thorough handoff report from PACU or OR',
+      'Review operative report and anesthesia record',
+      'Know type of anesthesia used',
+      'Review postoperative orders',
+      'Prepare room with oxygen, suction, and IV supplies'
+    ],
+    steps: [
+      { step: 1, action: 'Assess level of consciousness and orientation', rationale: 'Anesthesia effects and complications affect mental status' },
+      { step: 2, action: 'Monitor airway patency and respiratory status', rationale: 'Respiratory depression is major risk post-anesthesia' },
+      { step: 3, action: 'Auscultate breath sounds bilaterally', rationale: 'Detects atelectasis, aspiration, or pulmonary edema' },
+      { step: 4, action: 'Check oxygen saturation and maintain >94% (or ordered parameter)', rationale: 'Hypoxia requires immediate intervention' },
+      { step: 5, action: 'Assess vital signs per postoperative protocol', rationale: 'Detects hemorrhage, shock, or cardiac complications' },
+      { step: 6, action: 'Inspect surgical dressing for drainage', rationale: 'Excessive bleeding requires immediate attention' },
+      { step: 7, action: 'If drains present, assess drainage amount and character', rationale: 'Monitors for hemorrhage and drain function' },
+      { step: 8, action: 'Assess pain using appropriate scale', rationale: 'Pain management improves recovery and prevents complications' },
+      { step: 9, action: 'Administer pain medication as ordered', rationale: 'Adequate pain control allows deep breathing and mobility' },
+      { step: 10, action: 'Check IV site and fluid infusion rate', rationale: 'Ensures adequate hydration and medication delivery' },
+      { step: 11, action: 'Assess urinary output (should be >30 mL/hour)', rationale: 'Decreased output may indicate hypovolemia or retention' },
+      { step: 12, action: 'Auscultate bowel sounds in all quadrants', rationale: 'Assesses return of GI function' },
+      { step: 13, action: 'Check for nausea and administer antiemetics as needed', rationale: 'Prevents vomiting and aspiration' },
+      { step: 14, action: 'Assess extremities for circulation, sensation, movement', rationale: 'Detects positioning injuries or compartment syndrome' },
+      { step: 15, action: 'Assist with position changes and incentive spirometry', rationale: 'Prevents atelectasis and venous stasis' }
+    ],
+    safetyAlerts: [
+      'Respiratory depression peaks 30-60 minutes post-opioid administration',
+      'Sudden restlessness may indicate hypoxia or hemorrhage',
+      'Malignant hyperthermia is rare but life-threatening emergency',
+      'Spinal anesthesia patients must lie flat initially (prevents headache)',
+      'Report urine output <30 mL/hour for 2 consecutive hours'
+    ],
+    nursingConsiderations: [
+      'Vital signs typically q15min x4, q30min x4, then q4h',
+      'First ambulation requires two-person assist after general anesthesia',
+      'Regional blocks: assess motor/sensory return before ambulation',
+      'Elderly patients may have prolonged anesthesia effects'
+    ],
+    postProcedureCare: [
+      'Progress diet as tolerated when bowel sounds return',
+      'Encourage early mobilization',
+      'Maintain DVT prophylaxis',
+      'Continue respiratory exercises',
+      'Monitor for signs of infection'
+    ],
+    documentation: [
+      'Arrival assessment from PACU',
+      'Level of consciousness',
+      'Vital signs with trends',
+      'Respiratory status and oxygen saturation',
+      'Wound/dressing condition',
+      'Drain output',
+      'Pain level and interventions',
+      'Intake and output',
+      'Nausea/vomiting and treatment'
+    ],
+    commonErrors: [
+      'Not assessing respiratory status frequently enough',
+      'Inadequate pain assessment and management',
+      'Forgetting to assess for urinary retention',
+      'Not repositioning patient to prevent pressure injuries',
+      'Missing signs of hemorrhage (restlessness, tachycardia)'
+    ],
+    tips: [
+      'Tachycardia is often first sign of hypovolemia or hemorrhage',
+      'Gentle jaw thrust opens airway without moving neck',
+      'Ice chips before full liquids to assess swallow',
+      'Document "patient/family verbalized understanding" for teaching'
+    ],
+    references: [
+      'ASPAN. (2023). Perianesthesia Nursing Standards and Practice.',
+      'Rothrock, J.C. (2023). Alexander\'s Care of the Patient in Surgery.',
+      'Ignatavicius, D.D., & Workman, M.L. (2023). Medical-Surgical Nursing.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '30-45 minutes'
+  },
+  {
+    id: 'capillary-blood-glucose-newborn',
+    title: 'Newborn Heel Stick Blood Glucose',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Heel stick blood glucose testing in newborns is performed to screen for and monitor neonatal hypoglycemia. Proper technique minimizes pain and tissue damage while ensuring accurate results for this vulnerable population.',
+    indications: [
+      'Infants of diabetic mothers',
+      'Large or small for gestational age infants',
+      'Premature infants',
+      'Infants with signs of hypoglycemia (jitteriness, poor feeding)',
+      'Infants requiring IV glucose',
+      'Routine screening per nursery protocol'
+    ],
+    contraindications: [
+      'Previous heel puncture site with hematoma',
+      'Infected heel tissue',
+      'Posterior curvature of heel (nerve/vessel location)'
+    ],
+    equipment: [
+      'Automated incision device designed for neonates',
+      'Glucose meter with appropriate test strips',
+      'Alcohol prep pad',
+      'Sterile gauze pads',
+      'Bandage (optional - often not used on newborns)',
+      'Warm pack or heel warmer',
+      'Gloves',
+      'Pacifier and/or sucrose solution for comfort'
+    ],
+    preparation: [
+      'Verify order and infant identification',
+      'Warm heel with warm pack for 3-5 minutes',
+      'Gather all supplies',
+      'Offer pacifier with sucrose for comfort measure',
+      'Hold infant securely or place in comfortable position'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and apply gloves', rationale: 'Prevents infection transmission' },
+      { step: 2, action: 'Verify infant identification with two identifiers', rationale: 'Ensures correct infant is tested' },
+      { step: 3, action: 'Apply warm pack to heel for 3-5 minutes if not already done', rationale: 'Increases blood flow for adequate sample' },
+      { step: 4, action: 'Position infant with heel lower than heart', rationale: 'Gravity assists blood flow' },
+      { step: 5, action: 'Select lateral or medial aspect of heel (avoid center)', rationale: 'Avoids posterior tibial artery and calcaneal nerve' },
+      { step: 6, action: 'Clean site with alcohol and allow to dry completely', rationale: 'Alcohol residue affects glucose readings' },
+      { step: 7, action: 'Perform heel stick perpendicular to skin lines', rationale: 'Allows blood to flow along skin lines' },
+      { step: 8, action: 'Wipe away first drop of blood with sterile gauze', rationale: 'First drop may contain tissue fluid affecting accuracy' },
+      { step: 9, action: 'Allow large blood drop to form (no squeezing)', rationale: 'Squeezing causes hemolysis and inaccurate results' },
+      { step: 10, action: 'Touch blood drop to test strip edge', rationale: 'Allows capillary action to fill strip' },
+      { step: 11, action: 'Apply gentle pressure with gauze until bleeding stops', rationale: 'Prevents hematoma formation' },
+      { step: 12, action: 'Read and document result', rationale: 'Timely documentation ensures appropriate intervention' },
+      { step: 13, action: 'Comfort infant and return to parent/bassinet', rationale: 'Skin-to-skin contact aids recovery' }
+    ],
+    safetyAlerts: [
+      'Never puncture posterior (back) of heel - risk of bone, nerve, vessel damage',
+      'Hypoglycemia (<40-45 mg/dL in newborn) requires immediate intervention',
+      'Excessive squeezing causes hemolysis and false low readings',
+      'Deep punctures can cause calcaneal osteomyelitis'
+    ],
+    nursingConsiderations: [
+      'Normal newborn glucose is 40-60 mg/dL in first hours, then 50-90 mg/dL',
+      'Breastfed infants may have lower glucose but tolerate well',
+      'Symptomatic hypoglycemia requires IV treatment regardless of level',
+      'Sucrose and non-nutritive sucking reduce pain response'
+    ],
+    postProcedureCare: [
+      'Feed infant if hypoglycemic and able to feed',
+      'Recheck glucose per protocol (typically 30 minutes post-intervention)',
+      'Monitor for signs of hypoglycemia',
+      'Assess heel for hematoma or excessive bruising'
+    ],
+    documentation: [
+      'Time of test',
+      'Site used',
+      'Blood glucose result',
+      'Infant condition and signs/symptoms',
+      'Interventions if hypoglycemic',
+      'Recheck times and results'
+    ],
+    commonErrors: [
+      'Puncturing center or posterior heel',
+      'Not warming heel adequately',
+      'Squeezing heel to obtain blood',
+      'Using adult lancet (too deep)',
+      'Not wiping first blood drop'
+    ],
+    tips: [
+      'Rotate heel stick sites to prevent tissue damage',
+      'Swaddling with feet exposed provides comfort',
+      'Mothers can hold infant during procedure',
+      'Feeding immediately after helps with comfort'
+    ],
+    references: [
+      'AAP. (2011). Postnatal Glucose Homeostasis in Late-Preterm and Term Infants.',
+      'AWHONN. (2020). Neonatal Skin Care Evidence-Based Clinical Practice Guideline.',
+      'Palpallatoc, C. (2023). Neonatal Nursing Care Handbook.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '5-10 minutes'
+  },
+  {
+    id: 'specimen-collection-urine',
+    title: 'Urine Specimen Collection',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Urine specimen collection involves obtaining urine samples for diagnostic testing including urinalysis, culture, and specific tests. Different collection methods are used depending on the test ordered and patient status.',
+    indications: [
+      'Urinalysis for general assessment',
+      'Urine culture for suspected UTI',
+      'Drug screening',
+      '24-hour urine for quantitative tests',
+      'Pregnancy testing',
+      'Monitoring diabetes or kidney function'
+    ],
+    contraindications: [
+      'Menstruating patients (may contaminate sample)',
+      'Recent contrast dye for certain tests',
+      'Insufficient urine output (anuria)'
+    ],
+    equipment: [
+      'Clean specimen container with lid',
+      'Sterile container for culture specimens',
+      'Antiseptic wipes or cleansing solution',
+      'Gloves',
+      'Labels and lab requisition',
+      'Collection "hat" for toilet if needed',
+      '24-hour container if ordered'
+    ],
+    preparation: [
+      'Verify test ordered and collection method required',
+      'Explain procedure and collection technique to patient',
+      'Determine if patient can collect independently',
+      'Gather appropriate supplies for collection method',
+      'Label container with patient information'
+    ],
+    steps: [
+      { step: 1, action: 'For random sample: collect any voided specimen', rationale: 'Sufficient for routine urinalysis and screening' },
+      { step: 2, action: 'For clean-catch midstream: cleanse urethral meatus', rationale: 'Reduces contamination from skin flora' },
+      { step: 3, action: 'Instruct patient to begin voiding into toilet', rationale: 'First stream flushes out urethral contaminants' },
+      { step: 4, action: 'Collect midstream portion into sterile container', rationale: 'Provides specimen least likely to be contaminated' },
+      { step: 5, action: 'Allow remaining urine to pass into toilet', rationale: 'Only midstream portion is needed' },
+      { step: 6, action: 'For catheter specimen: clamp tubing for 15-30 minutes', rationale: 'Allows fresh urine to collect in tubing' },
+      { step: 7, action: 'Cleanse sampling port with alcohol', rationale: 'Prevents contamination from port surface' },
+      { step: 8, action: 'Aspirate urine with sterile syringe from port', rationale: 'Maintains closed drainage system' },
+      { step: 9, action: 'Transfer to sterile specimen container', rationale: 'Preserves specimen integrity for testing' },
+      { step: 10, action: 'For 24-hour collection: discard first morning void', rationale: 'Establishes start time for collection period' },
+      { step: 11, action: 'Collect all urine for 24 hours in designated container', rationale: 'Complete collection ensures accurate results' },
+      { step: 12, action: 'Secure lid and label specimen container', rationale: 'Proper labeling prevents errors' },
+      { step: 13, action: 'Transport to lab promptly or refrigerate', rationale: 'Delays cause bacterial overgrowth and affect results' }
+    ],
+    safetyAlerts: [
+      'Never disconnect catheter from drainage tubing - use sampling port',
+      'Urine for culture must be in sterile container',
+      '24-hour specimens must include final void at end of collection',
+      'Refrigerate specimens that cannot be tested within 1 hour'
+    ],
+    nursingConsiderations: [
+      'First morning void is most concentrated for pregnancy/drug tests',
+      'Certain medications and foods affect urine color and results',
+      'Pediatric collection may require collection bag or catheterization',
+      'Document any factors that may affect results'
+    ],
+    postProcedureCare: [
+      'Ensure patient comfort after collection',
+      'Transport specimen to lab within timeframe',
+      'Document collection time and method',
+      'Follow up on results as indicated'
+    ],
+    documentation: [
+      'Type of specimen collected',
+      'Collection method used',
+      'Date and time of collection',
+      'Patient assistance needed',
+      'Specimen transported or stored',
+      'Any collection difficulties'
+    ],
+    commonErrors: [
+      'Touching inside of sterile container',
+      'Not cleansing properly for clean-catch',
+      'Disconnecting catheter instead of using port',
+      'Delaying transport to lab',
+      'Not refrigerating when transport delayed'
+    ],
+    tips: [
+      'Have patient drink fluids 30 minutes before if able',
+      'Running water sound may help patient void',
+      'Female patients should wipe front to back',
+      'Collect before starting antibiotics for culture'
+    ],
+    references: [
+      'Fischbach, F.T. (2023). A Manual of Laboratory and Diagnostic Tests.',
+      'Perry, A.G., & Potter, P.A. (2023). Clinical Nursing Skills & Techniques.',
+      'McPherson, R.A. (2022). Henry\'s Clinical Diagnosis and Management by Laboratory Methods.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '5-15 minutes'
+  },
+  {
+    id: 'nasal-cannula-high-flow',
+    title: 'High-Flow Nasal Cannula (HFNC) Therapy',
+    category: 'Oxygen Therapy',
+    categorySlug: 'oxygen-therapy',
+    description: 'High-flow nasal cannula therapy delivers heated and humidified oxygen at high flow rates (up to 60 L/min in adults). It provides more reliable FiO2 delivery, reduces anatomical dead space, and generates low-level PEEP to improve oxygenation.',
+    indications: [
+      'Hypoxemic respiratory failure',
+      'Type 1 respiratory failure',
+      'Post-extubation support',
+      'Acute pulmonary edema',
+      'Pneumonia with hypoxemia',
+      'As alternative to non-invasive ventilation',
+      'Do-not-intubate patients needing high oxygen'
+    ],
+    contraindications: [
+      'Complete nasal obstruction',
+      'Facial trauma preventing nasal prong placement',
+      'Severely altered mental status requiring intubation',
+      'Type 2 respiratory failure (use with caution)',
+      'Epistaxis'
+    ],
+    equipment: [
+      'High-flow nasal cannula system',
+      'Appropriately sized nasal cannula (adult/pediatric)',
+      'Humidifier and heated circuit',
+      'Blender or flow meter capable of high flow',
+      'Oxygen source (wall or tank)',
+      'Pulse oximeter',
+      'ABG supplies if needed'
+    ],
+    preparation: [
+      'Verify order for flow rate and FiO2',
+      'Assess patient respiratory status and baseline',
+      'Select appropriately sized nasal cannula',
+      'Set up humidifier with sterile water',
+      'Set initial temperature (usually 37°C)',
+      'Explain therapy and sensations to patient'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and apply PPE as needed', rationale: 'Prevents infection transmission' },
+      { step: 2, action: 'Set flow rate as ordered (typically start 20-30 L/min)', rationale: 'Higher flows provide better oxygenation and PEEP effect' },
+      { step: 3, action: 'Set FiO2 to achieve target SpO2 (usually 88-94%)', rationale: 'Titrate to patient needs; avoid hyperoxia' },
+      { step: 4, action: 'Set humidifier temperature to 37°C (or as ordered)', rationale: 'Body temperature reduces airway drying and improves comfort' },
+      { step: 5, action: 'Insert nasal prongs into nares (should fit loosely)', rationale: 'Tight fit reduces effectiveness and causes discomfort' },
+      { step: 6, action: 'Secure tubing behind ears and under chin', rationale: 'Keeps cannula in place during movement' },
+      { step: 7, action: 'Verify mist visible in tubing', rationale: 'Confirms humidifier is functioning' },
+      { step: 8, action: 'Monitor oxygen saturation continuously', rationale: 'Allows rapid FiO2 adjustment as needed' },
+      { step: 9, action: 'Assess patient comfort and work of breathing', rationale: 'Identifies tolerance or need for escalation' },
+      { step: 10, action: 'Encourage patient to keep mouth closed when possible', rationale: 'Maintains PEEP effect and FiO2 delivery' },
+      { step: 11, action: 'Monitor for nasal dryness or irritation', rationale: 'Humidification issues require intervention' },
+      { step: 12, action: 'Obtain ABG as ordered to assess oxygenation/ventilation', rationale: 'Provides objective measure of therapy effectiveness' }
+    ],
+    safetyAlerts: [
+      'ROX index <3.85 at 12 hours predicts HFNC failure - consider escalation',
+      'Watch for clinical deterioration despite therapy',
+      'Risk of aspiration if patient vomits - cannot remove quickly',
+      'Fire risk with high oxygen concentrations - no smoking/flames',
+      'Monitor for skin breakdown at contact points'
+    ],
+    nursingConsiderations: [
+      'Flow rate provides PEEP effect (approximately 1 cmH2O per 10 L flow)',
+      'Patient can eat and talk during therapy',
+      'Less claustrophobic than mask interfaces',
+      'May delay intubation recognition - monitor closely'
+    ],
+    postProcedureCare: [
+      'Wean flow rate and FiO2 as tolerated',
+      'Transition to standard nasal cannula when flow <15 L/min',
+      'Continue monitoring for rebound hypoxemia',
+      'Assess for skin breakdown at contact points'
+    ],
+    documentation: [
+      'Flow rate and FiO2 settings',
+      'Humidifier temperature',
+      'Oxygen saturation and respiratory rate',
+      'Patient comfort and tolerance',
+      'Work of breathing assessment',
+      'ABG results if obtained'
+    ],
+    commonErrors: [
+      'Using prongs that are too small (leak) or too large (pressure)',
+      'Setting temperature too low (increased secretions)',
+      'Not monitoring closely for therapy failure',
+      'Allowing water to collect in tubing',
+      'Forgetting to assess nares for breakdown'
+    ],
+    tips: [
+      'Empty condensation from tubing away from patient',
+      'Provide humidifier at 37°C for best comfort and function',
+      'Use ROX index (SpO2/FiO2 ÷ RR) to predict success',
+      'Apply barrier cream to nares to prevent breakdown'
+    ],
+    references: [
+      'Roca, O., et al. (2019). An Index Combining Respiratory Rate and Oxygenation to Predict HFNC Outcome.',
+      'AARC. (2021). Oxygen Therapy for Adults Clinical Practice Guideline.',
+      'Nishimura, M. (2016). High-Flow Nasal Cannula Oxygen Therapy in Adults.'
+    ],
+    difficulty: 'advanced',
+    estimatedTime: '15-20 minutes'
+  },
+  {
+    id: 'lumbar-puncture-assistance',
+    title: 'Lumbar Puncture Assistance',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Assisting with lumbar puncture (spinal tap) involves positioning the patient, supporting them during the procedure, monitoring for complications, and collecting/handling cerebrospinal fluid specimens. This diagnostic procedure is used to analyze CSF or administer medications intrathecally.',
+    indications: [
+      'Suspected meningitis or encephalitis',
+      'Subarachnoid hemorrhage diagnosis',
+      'Multiple sclerosis evaluation',
+      'Intrathecal chemotherapy or medication administration',
+      'Measurement of CSF pressure',
+      'Myelography'
+    ],
+    contraindications: [
+      'Increased intracranial pressure (risk of herniation)',
+      'Infection at puncture site',
+      'Severe coagulopathy',
+      'Spinal cord mass or tumor',
+      'Patient refusal'
+    ],
+    equipment: [
+      'Lumbar puncture tray (sterile)',
+      'Sterile gloves and gown for provider',
+      'Local anesthetic (usually lidocaine)',
+      'Antiseptic solution (chlorhexidine or betadine)',
+      'Manometer for pressure measurement',
+      'Specimen tubes (usually 4, numbered)',
+      'Labels and laboratory requisitions',
+      'Sterile drape'
+    ],
+    preparation: [
+      'Verify informed consent is signed',
+      'Explain procedure and positioning to patient',
+      'Have patient void before procedure',
+      'Gather and check expiration dates on supplies',
+      'Position patient appropriately',
+      'Administer sedation if ordered'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and apply gloves', rationale: 'Maintains sterile technique' },
+      { step: 2, action: 'Position patient in lateral recumbent with knees to chest', rationale: 'Opens intervertebral spaces for needle insertion' },
+      { step: 3, action: 'Alternative: sitting position leaning forward over table', rationale: 'Used if lateral position is difficult' },
+      { step: 4, action: 'Stand in front of patient providing support and reassurance', rationale: 'Maintains position and reduces anxiety' },
+      { step: 5, action: 'Assist provider with draping and antiseptic application', rationale: 'Maintains sterile field' },
+      { step: 6, action: 'Coach patient to remain still during needle insertion', rationale: 'Movement increases risk of traumatic tap' },
+      { step: 7, action: 'Monitor patient for pain, numbness, or shooting sensations', rationale: 'May indicate nerve contact requiring repositioning' },
+      { step: 8, action: 'Note opening pressure when measured', rationale: 'Elevated pressure indicates increased ICP' },
+      { step: 9, action: 'Label specimen tubes 1-4 in order collected', rationale: 'Tube sequence affects interpretation (traumatic vs pathologic blood)' },
+      { step: 10, action: 'Assist with dressing application after needle removal', rationale: 'Prevents CSF leak and infection' },
+      { step: 11, action: 'Position patient flat or as ordered post-procedure', rationale: 'May reduce post-LP headache' },
+      { step: 12, action: 'Transport specimens to laboratory promptly', rationale: 'Delays affect cell counts and culture results' }
+    ],
+    safetyAlerts: [
+      'Watch for signs of herniation: decreasing LOC, pupil changes, posturing',
+      'Sudden severe headache or neurological changes require immediate notification',
+      'Bloody CSF in first tube clearing in subsequent tubes = traumatic tap',
+      'Persistent bloody CSF in all tubes suggests subarachnoid hemorrhage'
+    ],
+    nursingConsiderations: [
+      'Patient may feel pressure but should not feel sharp pain',
+      'Encourage fluids post-procedure to restore CSF volume',
+      'Post-LP headache is common - worse when upright',
+      'CSF normally clear and colorless (like water)'
+    ],
+    postProcedureCare: [
+      'Keep patient flat for 1-4 hours as ordered',
+      'Monitor for headache, especially positional',
+      'Assess puncture site for drainage or hematoma',
+      'Monitor neurological status',
+      'Encourage oral fluids',
+      'Report severe headache, fever, or drainage'
+    ],
+    documentation: [
+      'Procedure performed and provider',
+      'Patient positioning',
+      'Opening and closing pressures',
+      'CSF appearance (color, clarity)',
+      'Number of tubes collected',
+      'Patient tolerance',
+      'Post-procedure teaching'
+    ],
+    commonErrors: [
+      'Not maintaining patient position during procedure',
+      'Mislabeling specimen tubes',
+      'Allowing patient to sit up immediately post-procedure',
+      'Not monitoring for post-procedure complications',
+      'Delaying specimen transport'
+    ],
+    tips: [
+      'Have patient hug a pillow while in fetal position for comfort',
+      'Talk to patient throughout to reduce anxiety',
+      'If patient has back problems, coordinate with provider for positioning',
+      'Caffeine may help relieve post-LP headache'
+    ],
+    references: [
+      'Engelborghs, S., et al. (2017). Consensus Guidelines for Lumbar Puncture.',
+      'Ellenby, M.S. (2022). Illustrated Textbook of Paediatrics.',
+      'Lewis, S.L., et al. (2023). Medical-Surgical Nursing, 12th ed.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '30-45 minutes'
+  },
+  {
+    id: 'death-pronouncement-postmortem',
+    title: 'Death Pronouncement and Postmortem Care',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Postmortem care involves preparing the body after death with dignity and respect while supporting the grieving family. This includes verification of death, proper body preparation, and documentation while honoring cultural and religious preferences.',
+    indications: [
+      'Expected death (hospice, DNR patients)',
+      'Death following resuscitation efforts',
+      'Sudden unexpected death (with medical examiner notification)'
+    ],
+    contraindications: [
+      'Do not remove lines/tubes if medical examiner case',
+      'Organ donation cases have specific protocols'
+    ],
+    equipment: [
+      'Clean linens and gown',
+      'Washcloths and basin',
+      'Body bag or shroud',
+      'Identification tags (3)',
+      'Patient belongings bag',
+      'Gauze and tape for securing tubes if kept',
+      'Personal protective equipment'
+    ],
+    preparation: [
+      'Confirm physician/provider notification',
+      'Verify death pronouncement by authorized provider',
+      'Identify need for autopsy or medical examiner involvement',
+      'Contact organ/tissue procurement organization',
+      'Determine family wishes for viewing and cultural practices'
+    ],
+    steps: [
+      { step: 1, action: 'Verify identification of deceased', rationale: 'Ensures correct documentation and body identification' },
+      { step: 2, action: 'Turn off monitoring equipment and alarms', rationale: 'Reduces distressing sounds for family' },
+      { step: 3, action: 'If not ME case, remove IV catheters and non-sutured tubes', rationale: 'Prepares body for viewing and transport' },
+      { step: 4, action: 'If ME case, leave all tubes and lines in place', rationale: 'Medical examiner requires body as found' },
+      { step: 5, action: 'Position body supine with arms at sides or on abdomen', rationale: 'Dignified positioning before rigor mortis sets in' },
+      { step: 6, action: 'Close eyes by gently holding lids closed briefly', rationale: 'Provides more peaceful appearance' },
+      { step: 7, action: 'Place small rolled towel under chin to close mouth', rationale: 'Maintains jaw position before rigor' },
+      { step: 8, action: 'Remove dentures if family prefers, or insert if available', rationale: 'Family preference guides decision' },
+      { step: 9, action: 'Bathe body and comb hair', rationale: 'Presents deceased with dignity' },
+      { step: 10, action: 'Apply clean gown and linens', rationale: 'Prepares for family viewing' },
+      { step: 11, action: 'Allow family private time for viewing and goodbye', rationale: 'Supports grief process' },
+      { step: 12, action: 'Collect and inventory personal belongings', rationale: 'Ensures valuables are accounted for' },
+      { step: 13, action: 'Apply identification tags to body, shroud, and belongings', rationale: 'Prevents misidentification' },
+      { step: 14, action: 'Complete postmortem documentation', rationale: 'Legal and clinical requirement' },
+      { step: 15, action: 'Contact morgue or funeral home for transport', rationale: 'Facilitates appropriate disposition' }
+    ],
+    safetyAlerts: [
+      'Standard precautions remain necessary for body handling',
+      'Do not remove any tubes/devices in potential ME cases',
+      'Organ donation must be considered before postmortem care',
+      'Some religious/cultural practices require specific care providers'
+    ],
+    nursingConsiderations: [
+      'Allow adequate time for family to say goodbye',
+      'Respect cultural and religious death practices',
+      'Some cultures do not want body washed by hospital staff',
+      'Support staff members who may be affected by death'
+    ],
+    postProcedureCare: [
+      'Provide information about death certificate process',
+      'Offer chaplain or social worker support',
+      'Give family time before removing belongings',
+      'Follow up with bereavement resources'
+    ],
+    documentation: [
+      'Time of death pronouncement and provider name',
+      'Notification of family and others',
+      'Condition of body',
+      'Medical examiner notification if applicable',
+      'Organ/tissue procurement notification',
+      'Disposition of belongings and valuables',
+      'Release of body to funeral home'
+    ],
+    commonErrors: [
+      'Not allowing adequate family time',
+      'Removing tubes when ME case is suspected',
+      'Not inventorying valuables properly',
+      'Inadequate emotional support for family',
+      'Not respecting cultural practices'
+    ],
+    tips: [
+      'Offer to take handprint or lock of hair for family',
+      'Use deceased person\'s name when speaking with family',
+      'Allow children to be present if family wishes',
+      'Provide written bereavement resources'
+    ],
+    references: [
+      'ELNEC. (2023). End-of-Life Nursing Education Consortium.',
+      'Hospice and Palliative Nurses Association. (2022). Care of the Imminently Dying.',
+      'Perry, A.G., & Potter, P.A. (2023). Clinical Nursing Skills & Techniques.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '45-90 minutes'
+  },
+  {
+    id: 'eye-ear-drops-administration',
+    title: 'Eye and Ear Drop Administration',
+    category: 'Medication Administration',
+    categorySlug: 'medication-administration',
+    description: 'Administration of ophthalmic and otic medications requires proper technique to ensure medication reaches the intended site and prevents contamination or injury. Different techniques are used for eye versus ear medications.',
+    indications: [
+      'Eye infections (conjunctivitis)',
+      'Glaucoma treatment',
+      'Eye inflammation',
+      'Pre/post eye surgery',
+      'Ear infections (otitis externa/media)',
+      'Cerumen impaction',
+      'Ear pain relief'
+    ],
+    contraindications: [
+      'Known allergy to medication',
+      'Perforated tympanic membrane (some ear drops)',
+      'Eye injury requiring surgical evaluation',
+      'Contact lenses in place (some eye drops)'
+    ],
+    equipment: [
+      'Prescribed medication (ophthalmic or otic)',
+      'Tissues or cotton balls',
+      'Gloves',
+      'Medication administration record',
+      'Penlight (for eye assessment)'
+    ],
+    preparation: [
+      'Verify medication order against MAR',
+      'Check medication for expiration and contamination',
+      'Perform hand hygiene',
+      'Identify patient using two identifiers',
+      'Verify correct eye (OD, OS, OU) or ear (AD, AS, AU)',
+      'Warm ear drops to body temperature if needed'
+    ],
+    steps: [
+      { step: 1, action: 'FOR EYE DROPS: Have patient look up at ceiling', rationale: 'Exposes lower conjunctival sac and reduces blink reflex' },
+      { step: 2, action: 'With non-dominant hand, pull lower lid down gently', rationale: 'Creates pocket for medication' },
+      { step: 3, action: 'Hold dropper 1-2 cm above conjunctival sac', rationale: 'Prevents contamination from touching eye' },
+      { step: 4, action: 'Instill prescribed number of drops into lower conjunctival sac', rationale: 'Lower sac holds medication better than directly on cornea' },
+      { step: 5, action: 'Have patient close eyes gently (do not squeeze)', rationale: 'Squeezing forces medication out' },
+      { step: 6, action: 'Apply gentle pressure to inner canthus for 1-2 minutes', rationale: 'Prevents systemic absorption through nasolacrimal duct' },
+      { step: 7, action: 'Wipe excess medication with tissue from inner to outer canthus', rationale: 'Prevents contamination of other eye' },
+      { step: 8, action: 'FOR EAR DROPS: Position patient with affected ear up', rationale: 'Allows gravity to assist medication flow' },
+      { step: 9, action: 'For adults: pull pinna up and back', rationale: 'Straightens ear canal in adults' },
+      { step: 10, action: 'For children <3 years: pull pinna down and back', rationale: 'Straightens ear canal in young children' },
+      { step: 11, action: 'Instill drops along side of ear canal', rationale: 'Avoids direct pressure on tympanic membrane' },
+      { step: 12, action: 'Have patient remain on side for 5-10 minutes', rationale: 'Allows medication to reach all areas' },
+      { step: 13, action: 'Insert cotton ball loosely if ordered', rationale: 'Prevents medication from draining out' }
+    ],
+    safetyAlerts: [
+      'Never touch dropper tip to eye or ear',
+      'Stop ear drops if patient reports severe pain or dizziness',
+      'Some ear drops contraindicated with perforated eardrum',
+      'Beta-blocker eye drops can cause systemic effects - occlude puncta'
+    ],
+    nursingConsiderations: [
+      'Wait 5 minutes between different eye medications',
+      'Ointments always administered last after drops',
+      'Cold ear drops can cause vertigo - warm to body temperature',
+      'Contact lenses may need to be removed before instillation'
+    ],
+    postProcedureCare: [
+      'Assess patient response to medication',
+      'Remind patient not to rub eyes',
+      'Warn about temporary blurred vision from ointment',
+      'Document administration'
+    ],
+    documentation: [
+      'Medication name, dose, route, and time',
+      'Eye or ear treated (use correct abbreviation)',
+      'Patient response',
+      'Any adverse effects',
+      'Teaching provided'
+    ],
+    commonErrors: [
+      'Instilling drops directly on cornea (causes discomfort)',
+      'Touching dropper to eye or ear',
+      'Not pulling pinna correctly for age',
+      'Using cold ear drops',
+      'Not occluding puncta for systemic medications'
+    ],
+    tips: [
+      'OD = right eye, OS = left eye, OU = both eyes',
+      'AD = right ear, AS = left ear, AU = both ears',
+      'Roll bottle between hands to warm ear drops',
+      'Have patient practice blinking before starting'
+    ],
+    references: [
+      'Lehne, R.A. (2023). Pharmacology for Nursing Care.',
+      'Perry, A.G., & Potter, P.A. (2023). Clinical Nursing Skills & Techniques.',
+      'ISMP. (2023). Error-Prone Abbreviations List.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '5-10 minutes'
+  },
+  {
+    id: 'gastric-lavage',
+    title: 'Gastric Lavage (Stomach Pumping)',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Gastric lavage involves irrigation of the stomach to remove toxic substances or decompress the stomach in cases of obstruction. This emergency procedure is performed through a large-bore orogastric tube and requires careful technique to prevent aspiration.',
+    indications: [
+      'Potentially life-threatening ingestion (within 1 hour)',
+      'Ingestion of substances not absorbed by activated charcoal',
+      'Massive drug overdose',
+      'Gastric decompression for obstruction',
+      'Active upper GI bleeding (for visualization)'
+    ],
+    contraindications: [
+      'Caustic substance ingestion (acids/alkalis)',
+      'Hydrocarbon ingestion (aspiration risk)',
+      'Sharp object ingestion',
+      'Esophageal stricture or varices',
+      'Recent gastric surgery',
+      'Ingestion >1 hour ago (most substances)',
+      'Non-toxic ingestion'
+    ],
+    equipment: [
+      'Large-bore orogastric tube (36-40 Fr for adults)',
+      'Large irrigating syringe (60 mL)',
+      'Tap water or normal saline (warmed)',
+      'Suction equipment',
+      'Container for measuring return',
+      'Specimen containers for toxicology',
+      'Personal protective equipment',
+      'Bite block (if patient not intubated)'
+    ],
+    preparation: [
+      'Ensure airway protection (intubation if GCS <8 or no gag reflex)',
+      'Verify physician order and toxicology consultation',
+      'Gather equipment and warm lavage fluid',
+      'Position patient in left lateral decubitus, head down',
+      'Have suction and resuscitation equipment ready',
+      'Save first gastric aspirate for toxicology'
+    ],
+    steps: [
+      { step: 1, action: 'Position patient in left lateral decubitus, 20° head down', rationale: 'Pools gastric contents in greater curvature, reduces aspiration risk' },
+      { step: 2, action: 'Measure tube from lips to ear to xiphoid', rationale: 'Ensures proper tube length for stomach' },
+      { step: 3, action: 'Insert large-bore orogastric tube', rationale: 'Large bore allows removal of pill fragments' },
+      { step: 4, action: 'Verify tube placement by aspiration and auscultation', rationale: 'Prevents lavage into lungs' },
+      { step: 5, action: 'Save initial aspirate for toxicology analysis', rationale: 'Identifies ingested substance' },
+      { step: 6, action: 'Instill 200-300 mL warmed fluid in adults', rationale: 'Larger volumes increase aspiration risk' },
+      { step: 7, action: 'Allow fluid to drain by gravity or gentle suction', rationale: 'Removes gastric contents and toxins' },
+      { step: 8, action: 'Repeat lavage until return is clear', rationale: 'Ensures thorough removal of toxic substance' },
+      { step: 9, action: 'Measure and document intake and output', rationale: 'Monitors for retained fluid' },
+      { step: 10, action: 'Administer activated charcoal through tube if indicated', rationale: 'Absorbs remaining toxin in GI tract' },
+      { step: 11, action: 'Remove tube or leave in place as ordered', rationale: 'May be left for ongoing gastric drainage' }
+    ],
+    safetyAlerts: [
+      'NEVER perform on caustic or hydrocarbon ingestion',
+      'Aspiration pneumonia is major complication - protect airway',
+      'Electrolyte imbalance can occur with large volumes',
+      'Esophageal perforation risk with forceful insertion',
+      'Hypothermia risk - use warmed fluids'
+    ],
+    nursingConsiderations: [
+      'Procedure is rarely indicated - most poisonings managed differently',
+      'Activated charcoal is first-line for most ingestions',
+      'Contact Poison Control Center for guidance',
+      'Document all substances and times of ingestion'
+    ],
+    postProcedureCare: [
+      'Continue monitoring for complications',
+      'Obtain repeat toxicology levels as indicated',
+      'Monitor for aspiration pneumonia',
+      'Continue GI decontamination as ordered',
+      'Psychiatric evaluation for intentional ingestion'
+    ],
+    documentation: [
+      'Indication for procedure',
+      'Time of ingestion and substances',
+      'Tube size and placement verification',
+      'Volume and type of lavage fluid',
+      'Total intake and output',
+      'Appearance of returns',
+      'Specimens sent to lab',
+      'Patient tolerance'
+    ],
+    commonErrors: [
+      'Performing lavage >1 hour post-ingestion (usually ineffective)',
+      'Using too much fluid per cycle (aspiration risk)',
+      'Not protecting airway adequately',
+      'Lavaging caustic ingestion',
+      'Not warming lavage fluid'
+    ],
+    tips: [
+      'Call Poison Control (1-800-222-1222) for all poisoning cases',
+      'Left lateral position preferred - slows gastric emptying to duodenum',
+      'Pill fragments in return confirm successful gastric access',
+      'Continue until return is clear and matches input'
+    ],
+    references: [
+      'AACT & EAPCCT. (2013). Position Statement: Gastric Lavage.',
+      'Goldfrank, L.R. (2023). Goldfrank\'s Toxicologic Emergencies.',
+      'American Association of Poison Control Centers. (2023). Guidelines.'
+    ],
+    difficulty: 'advanced',
+    estimatedTime: '30-60 minutes'
+  },
+  {
+    id: 'therapeutic-communication',
+    title: 'Therapeutic Communication Techniques',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Therapeutic communication is a purposeful form of interaction that promotes psychological well-being and helps patients express their concerns. These techniques establish trust, gather information, and support patients through difficult situations.',
+    indications: [
+      'Initial patient assessment',
+      'Patient teaching',
+      'Crisis intervention',
+      'Anxiety or fear management',
+      'Grief support',
+      'Mental health nursing',
+      'Difficult conversations',
+      'All patient interactions'
+    ],
+    contraindications: [
+      'None - can be adapted to all situations',
+      'Modify approach for cognitive impairment',
+      'Adjust for cultural differences'
+    ],
+    equipment: [
+      'Private, comfortable environment',
+      'Adequate time for interaction',
+      'Paper and pen for notes (if appropriate)',
+      'Tissues available',
+      'Comfortable seating at eye level'
+    ],
+    preparation: [
+      'Review patient background and current situation',
+      'Clear your schedule to be fully present',
+      'Eliminate distractions (phone, computer)',
+      'Ensure privacy',
+      'Center yourself emotionally'
+    ],
+    steps: [
+      { step: 1, action: 'Greet patient warmly and introduce yourself', rationale: 'Establishes initial rapport and sets professional tone' },
+      { step: 2, action: 'Position yourself at eye level, maintain appropriate distance', rationale: 'Conveys respect and willingness to engage' },
+      { step: 3, action: 'Use open-ended questions ("Tell me about...")', rationale: 'Encourages patient to share thoughts and feelings' },
+      { step: 4, action: 'Practice active listening - maintain eye contact, nod, lean forward', rationale: 'Shows genuine interest and attention' },
+      { step: 5, action: 'Use silence therapeutically', rationale: 'Allows patient time to process and continue sharing' },
+      { step: 6, action: 'Reflect feelings ("You seem worried about...")', rationale: 'Validates emotions and shows understanding' },
+      { step: 7, action: 'Restate or paraphrase content ("So you\'re saying...")', rationale: 'Confirms understanding and encourages elaboration' },
+      { step: 8, action: 'Clarify unclear statements ("Help me understand...")', rationale: 'Prevents misunderstanding and shows interest' },
+      { step: 9, action: 'Offer observations ("I notice you seem tense...")', rationale: 'Invites discussion of behaviors without judging' },
+      { step: 10, action: 'Summarize key points periodically', rationale: 'Organizes information and validates what was said' },
+      { step: 11, action: 'Avoid blocks to communication (advice-giving, false reassurance)', rationale: 'Maintains therapeutic relationship' },
+      { step: 12, action: 'Close with summary and plan', rationale: 'Provides structure and next steps' }
+    ],
+    safetyAlerts: [
+      'Assess for safety if patient expresses suicidal/homicidal ideation',
+      'Maintain professional boundaries',
+      'Do not make promises you cannot keep',
+      'Document concerning statements accurately'
+    ],
+    nursingConsiderations: [
+      'Cultural background affects communication preferences',
+      'Use interpreters for language barriers (not family members)',
+      'Adapt approach for children and elderly',
+      'Allow extra time for processing in cognitively impaired patients'
+    ],
+    postProcedureCare: [
+      'Document key points of conversation',
+      'Follow up on any concerns raised',
+      'Communicate relevant information to care team',
+      'Provide resources or referrals as needed'
+    ],
+    documentation: [
+      'Patient statements (use quotes when significant)',
+      'Patient affect and nonverbal behavior',
+      'Topics discussed',
+      'Patient concerns identified',
+      'Teaching provided',
+      'Follow-up plan'
+    ],
+    commonErrors: [
+      'Giving advice instead of listening',
+      'Using closed-ended questions exclusively',
+      'Offering false reassurance ("Everything will be fine")',
+      'Changing the subject when uncomfortable',
+      'Providing personal opinions',
+      'Being distracted during conversation'
+    ],
+    tips: [
+      'Start with least sensitive topics and build to more sensitive',
+      'Match patient\'s pace and energy',
+      'Use plain language, not medical jargon',
+      'Acknowledge difficulty of situation',
+      'It\'s okay to say "I don\'t know, but I\'ll find out"'
+    ],
+    references: [
+      'Peplau, H.E. (1991). Interpersonal Relations in Nursing.',
+      'Arnold, E.C., & Boggs, K.U. (2023). Interpersonal Relationships: Professional Communication Skills.',
+      'Stuart, G.W. (2024). Principles and Practice of Psychiatric Nursing.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '15-60 minutes'
   }
 ];
 
