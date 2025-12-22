@@ -42,7 +42,7 @@ export const categories: Category[] = [
     slug: 'fundamentals',
     description: 'Core nursing skills including hygiene, positioning, and basic patient care',
     icon: 'Heart',
-    procedureCount: 12
+    procedureCount: 14
   },
   {
     id: '2',
