@@ -3034,6 +3034,1090 @@ export const procedures: Procedure[] = [
     ],
     difficulty: 'basic',
     estimatedTime: '10-15 minutes for teaching'
+  },
+  {
+    id: 'oral-suctioning',
+    title: 'Oral and Pharyngeal Suctioning',
+    category: 'Oxygen Therapy',
+    categorySlug: 'oxygen-therapy',
+    description: 'Oral and pharyngeal suctioning removes secretions from the mouth and throat to maintain a patent airway. This procedure is used for patients who cannot clear their own secretions effectively.',
+    indications: [
+      'Audible gurgling or congested breathing sounds',
+      'Visible secretions in mouth or throat',
+      'Decreased oxygen saturation due to secretions',
+      'Inability to swallow or cough effectively',
+      'Post-operative patients with excess secretions',
+      'Patients with decreased level of consciousness'
+    ],
+    contraindications: [
+      'Recent oral, nasal, or esophageal surgery (consult physician)',
+      'Known bleeding disorders (use caution)',
+      'Epiglottitis (risk of complete obstruction)'
+    ],
+    equipment: [
+      'Suction source (wall or portable)',
+      'Suction tubing',
+      'Yankauer suction catheter (rigid oral suction)',
+      'Clean gloves',
+      'Face shield or goggles',
+      'Towel or waterproof pad',
+      'Cup of water for rinsing catheter'
+    ],
+    preparation: [
+      'Verify suction equipment is functioning',
+      'Set suction pressure (80-120 mmHg for adults)',
+      'Position patient semi-Fowlers or lateral if unconscious',
+      'Explain procedure to patient',
+      'Perform hand hygiene and don PPE'
+    ],
+    steps: [
+      { step: 1, action: 'Turn on suction and test by occluding tubing', rationale: 'Ensures equipment is functional before use' },
+      { step: 2, action: 'Attach Yankauer catheter to suction tubing', rationale: 'Connects catheter to suction source' },
+      { step: 3, action: 'Position patient with head turned to side if possible', rationale: 'Prevents aspiration of secretions' },
+      { step: 4, action: 'Open mouth gently, using tongue depressor if needed', rationale: 'Provides access to oral cavity' },
+      { step: 5, action: 'Insert catheter along gum line without suction', rationale: 'Prevents trauma to tissues during insertion' },
+      { step: 6, action: 'Apply suction by covering thumb port', rationale: 'Controls suction application' },
+      { step: 7, action: 'Move catheter around mouth, suctioning secretions', rationale: 'Removes secretions from cheeks, under tongue, roof of mouth' },
+      { step: 8, action: 'Suction pharynx by advancing catheter to back of throat', rationale: 'Clears secretions from pharyngeal area' },
+      { step: 9, action: 'Apply suction intermittently, no more than 10-15 seconds at a time', rationale: 'Prolonged suction can cause hypoxia and tissue trauma' },
+      { step: 10, action: 'Rinse catheter between passes with water', rationale: 'Maintains catheter patency and clears secretions' },
+      { step: 11, action: 'Allow patient to rest between suctioning passes', rationale: 'Prevents fatigue and allows oxygenation' },
+      { step: 12, action: 'Assess breath sounds and respiratory status after suctioning', rationale: 'Evaluates effectiveness of procedure' }
+    ],
+    safetyAlerts: [
+      'Do not force catheter if resistance is met',
+      'Watch for vagal response (bradycardia) during pharyngeal suctioning',
+      'Stop if bleeding occurs and notify physician',
+      'Never leave suction running unattended with patient'
+    ],
+    nursingConsiderations: [
+      'Suction only as needed, not on a fixed schedule',
+      'Use oral suction catheter for mouth, flexible catheter for deeper suctioning',
+      'Provide oral care after suctioning',
+      'Monitor for signs of aspiration'
+    ],
+    postProcedureCare: [
+      'Provide oral care and mouth moistening',
+      'Reposition patient for comfort',
+      'Dispose of catheter per facility policy',
+      'Document procedure and patient response'
+    ],
+    documentation: [
+      'Reason for suctioning',
+      'Amount, color, and consistency of secretions',
+      'Patient tolerance of procedure',
+      'Respiratory status before and after'
+    ],
+    commonErrors: [
+      'Suctioning too aggressively or too long',
+      'Not rinsing catheter between passes',
+      'Using too high suction pressure',
+      'Not assessing respiratory status after'
+    ],
+    tips: [
+      'Keep suction equipment at bedside for patients who need frequent suctioning',
+      'Teach family members technique if patient going home with suction needs',
+      'Use wall suction when available for consistent pressure',
+      'Have backup suction ready for high-risk patients'
+    ],
+    references: [
+      'AARC. (2023). Clinical Practice Guidelines for Suctioning.',
+      'Perry, A.G., & Potter, P.A. (2023). Clinical Nursing Skills & Techniques.',
+      'Sole, M.L., et al. (2021). Introduction to Critical Care Nursing.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '5-10 minutes'
+  },
+  {
+    id: 'ecg-12-lead',
+    title: '12-Lead ECG/EKG Acquisition',
+    category: 'Vital Signs',
+    categorySlug: 'vital-signs',
+    description: 'A 12-lead electrocardiogram (ECG/EKG) is a diagnostic test that records the electrical activity of the heart from 12 different angles. Proper lead placement is essential for accurate interpretation.',
+    indications: [
+      'Chest pain or suspected cardiac event',
+      'Arrhythmia evaluation',
+      'Pre-operative assessment',
+      'Syncope or dizziness evaluation',
+      'Baseline cardiac assessment',
+      'Medication monitoring (QT prolongation)',
+      'Electrolyte imbalance assessment'
+    ],
+    contraindications: [
+      'None absolute for diagnostic ECG',
+      'Use caution with skin breakdown at electrode sites'
+    ],
+    equipment: [
+      'ECG machine with cables',
+      '10 electrodes with adhesive backing',
+      'Alcohol prep pads',
+      'Gauze or washcloth',
+      'Razor (if hair removal needed)',
+      'Patient gown for privacy'
+    ],
+    preparation: [
+      'Explain procedure to patient - it is painless',
+      'Ensure patient privacy',
+      'Position patient supine with arms at sides',
+      'Expose chest while maintaining modesty',
+      'Clean skin with alcohol at electrode sites',
+      'Shave excessive chest hair if needed for electrode contact'
+    ],
+    steps: [
+      { step: 1, action: 'Identify and clean all electrode placement sites', rationale: 'Clean, dry skin ensures good electrode contact' },
+      { step: 2, action: 'Place RA (right arm) electrode on right wrist or upper arm', rationale: 'Limb leads can be placed distally or proximally on limb' },
+      { step: 3, action: 'Place LA (left arm) electrode on left wrist or upper arm', rationale: 'Symmetrical placement to right arm' },
+      { step: 4, action: 'Place RL (right leg) electrode on right ankle or lower leg', rationale: 'Serves as ground electrode' },
+      { step: 5, action: 'Place LL (left leg) electrode on left ankle or lower leg', rationale: 'Completes limb lead circuit' },
+      { step: 6, action: 'Locate 4th intercostal space at right sternal border for V1', rationale: 'V1 placement is reference point for other precordial leads' },
+      { step: 7, action: 'Place V1 electrode at 4th intercostal space, right sternal border', rationale: 'Views septum and right ventricle' },
+      { step: 8, action: 'Place V2 electrode at 4th intercostal space, left sternal border', rationale: 'Views septum and left ventricle' },
+      { step: 9, action: 'Place V4 electrode at 5th intercostal space, midclavicular line', rationale: 'Place V4 before V3 for accuracy' },
+      { step: 10, action: 'Place V3 electrode midway between V2 and V4', rationale: 'Views anterior wall of left ventricle' },
+      { step: 11, action: 'Place V5 electrode at anterior axillary line, same level as V4', rationale: 'Views lateral wall of left ventricle' },
+      { step: 12, action: 'Place V6 electrode at midaxillary line, same level as V4-V5', rationale: 'Views lateral wall of left ventricle' },
+      { step: 13, action: 'Connect all lead wires to corresponding electrodes', rationale: 'Correct connections essential for accurate reading' },
+      { step: 14, action: 'Instruct patient to lie still and breathe normally', rationale: 'Movement creates artifact' },
+      { step: 15, action: 'Acquire ECG tracing and verify quality', rationale: 'Good quality tracing needed for interpretation' },
+      { step: 16, action: 'If artifact present, troubleshoot and repeat', rationale: 'Poor quality may lead to misdiagnosis' }
+    ],
+    safetyAlerts: [
+      'STAT ECG for chest pain - do not delay for perfect preparation',
+      'Compare to previous ECG if available for new changes',
+      'Notify physician immediately of ST elevation or significant arrhythmia',
+      'Do not remove electrodes until tracing is verified acceptable'
+    ],
+    nursingConsiderations: [
+      'Women: place V3-V6 under breast tissue, not on top',
+      'For amputees: place limb electrodes on remaining limb portion',
+      'Dextrocardia: may need right-sided leads',
+      'Maintain patient modesty throughout procedure'
+    ],
+    postProcedureCare: [
+      'Remove electrodes gently',
+      'Clean any residual adhesive from skin',
+      'Inform patient when results will be available',
+      'Provide copy to patient if requested'
+    ],
+    documentation: [
+      'Time of ECG acquisition',
+      'Patient symptoms at time of ECG',
+      'Any technical difficulties',
+      'Immediate interpretation if critical findings',
+      'Notification of physician if indicated'
+    ],
+    commonErrors: [
+      'Limb lead reversal (especially LA and RA)',
+      'Precordial leads placed too high',
+      'V1-V2 not at 4th intercostal space',
+      'Poor skin preparation causing artifact',
+      'Patient movement during acquisition'
+    ],
+    tips: [
+      'Count down from sternal angle (2nd rib) to find 4th intercostal space',
+      'Keep V4-V6 horizontally aligned, not following rib contour',
+      'Place electrodes, then attach cables (easier positioning)',
+      'Use "white to right, smoke over fire" for limb leads'
+    ],
+    references: [
+      'American Heart Association. (2023). ECG Interpretation Guidelines.',
+      'Drew, B.J., et al. (2004). Practice Standards for Electrocardiographic Monitoring.',
+      'Thaler, M.S. (2023). The Only EKG Book You\'ll Ever Need.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '10-15 minutes'
+  },
+  {
+    id: 'wound-irrigation',
+    title: 'Wound Irrigation',
+    category: 'Wound Care',
+    categorySlug: 'wound-care',
+    description: 'Wound irrigation is the gentle washing of a wound with solution to remove debris, bacteria, and exudate. Proper irrigation promotes wound healing by creating an optimal environment for tissue repair.',
+    indications: [
+      'Contaminated wounds',
+      'Wounds with visible debris or foreign material',
+      'Wounds with heavy exudate or drainage',
+      'Chronic wounds with necrotic tissue',
+      'Surgical wound care as ordered',
+      'Bite wounds'
+    ],
+    contraindications: [
+      'Clean, healing wounds (may disrupt granulation tissue)',
+      'Wounds with exposed blood vessels or organs (low pressure only)',
+      'Use caution near drains or sutures'
+    ],
+    equipment: [
+      'Prescribed irrigation solution (usually normal saline)',
+      '35-60 mL syringe',
+      '18-19 gauge angiocatheter or splash shield',
+      'Sterile basin',
+      'Sterile gloves',
+      'Clean gloves for setup',
+      'Waterproof pad',
+      'Sterile gauze',
+      'New wound dressing supplies',
+      'Personal protective equipment'
+    ],
+    preparation: [
+      'Verify order for wound irrigation and solution',
+      'Warm solution to body temperature if possible',
+      'Position patient for comfort and access to wound',
+      'Place waterproof pad under wound area',
+      'Set up sterile field and supplies',
+      'Administer pain medication if needed before procedure'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and don clean gloves', rationale: 'Infection control during setup' },
+      { step: 2, action: 'Remove old dressing and assess wound', rationale: 'Evaluates current wound status' },
+      { step: 3, action: 'Dispose of old dressing and remove gloves', rationale: 'Prevents cross-contamination' },
+      { step: 4, action: 'Perform hand hygiene and don sterile gloves', rationale: 'Maintains asepsis for wound care' },
+      { step: 5, action: 'Draw up irrigation solution into syringe', rationale: 'Prepares for irrigation' },
+      { step: 6, action: 'Attach angiocatheter or splash shield to syringe', rationale: 'Creates appropriate pressure stream' },
+      { step: 7, action: 'Position basin to catch irrigation runoff', rationale: 'Collects contaminated solution' },
+      { step: 8, action: 'Hold syringe 2-5 cm from wound surface', rationale: 'Optimal distance for effective pressure' },
+      { step: 9, action: 'Irrigate wound from cleanest to most contaminated area', rationale: 'Prevents spreading bacteria to clean areas' },
+      { step: 10, action: 'Use gentle, steady pressure to flush wound', rationale: 'Approximately 8 psi is optimal for debris removal' },
+      { step: 11, action: 'Continue until solution runs clear or prescribed amount used', rationale: 'Ensures adequate cleansing' },
+      { step: 12, action: 'For tunneling or undermining, direct stream into cavity', rationale: 'Cleans areas that may harbor bacteria' },
+      { step: 13, action: 'Gently pat surrounding skin dry with sterile gauze', rationale: 'Wet skin is prone to maceration' },
+      { step: 14, action: 'Apply appropriate wound dressing', rationale: 'Protects wound and promotes healing' }
+    ],
+    safetyAlerts: [
+      'Use only prescribed solution - do not substitute without order',
+      'Do not use excessive pressure which can drive bacteria deeper',
+      'Stop if patient reports significant pain and reassess',
+      'Watch for signs of spreading infection despite irrigation'
+    ],
+    nursingConsiderations: [
+      'Document wound appearance before and after irrigation',
+      'Note character of irrigation return (color, debris, odor)',
+      'Cultures should be obtained before irrigation if ordered',
+      'Consider pulsatile lavage for heavily contaminated wounds'
+    ],
+    postProcedureCare: [
+      'Apply appropriate dressing per wound type',
+      'Position patient comfortably',
+      'Dispose of supplies properly',
+      'Monitor for signs of infection'
+    ],
+    documentation: [
+      'Wound location, size, and appearance',
+      'Solution type and amount used',
+      'Character of wound drainage and irrigation return',
+      'Dressing applied',
+      'Patient tolerance of procedure'
+    ],
+    commonErrors: [
+      'Using cold solution (causes vasoconstriction)',
+      'Irrigating with too much pressure',
+      'Not using enough solution to adequately clean',
+      'Contaminating sterile field during procedure'
+    ],
+    tips: [
+      'Warm saline by placing in warm water bath before use',
+      'A 35mL syringe with 19g angiocatheter produces approximately 8 psi',
+      'Packing material should be moist, not dripping wet',
+      'Take photos of wound for documentation if facility policy allows'
+    ],
+    references: [
+      'WOCN. (2023). Wound, Ostomy and Continence Nursing Guidelines.',
+      'AHRQ. (2022). Wound Care Guidelines.',
+      'Nix, D.P. (2023). Bryant & Nix\'s Acute and Chronic Wounds.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '15-20 minutes'
+  },
+  {
+    id: 'seizure-precautions',
+    title: 'Seizure Precautions and Management',
+    category: 'Emergency Procedures',
+    categorySlug: 'emergency',
+    description: 'Seizure precautions are safety measures implemented to protect patients at risk for seizures from injury. Management during a seizure focuses on safety, airway management, and documentation of seizure characteristics.',
+    indications: [
+      'History of seizure disorder',
+      'Alcohol or drug withdrawal',
+      'Head injury or brain tumor',
+      'Electrolyte imbalances',
+      'High fever (especially children)',
+      'Eclampsia risk in pregnancy',
+      'Post-neurosurgery'
+    ],
+    contraindications: [
+      'None - precautions should be implemented for all at-risk patients'
+    ],
+    equipment: [
+      'Padded side rails',
+      'Suction equipment at bedside',
+      'Oxygen and bag-valve mask',
+      'IV access supplies',
+      'Seizure medication as ordered (PRN lorazepam)',
+      'Padded tongue blade (only if institution policy)',
+      'Pulse oximeter'
+    ],
+    preparation: [
+      'Complete seizure risk assessment on admission',
+      'Implement precautions for at-risk patients',
+      'Ensure emergency equipment is functional and accessible',
+      'Know location of emergency medications',
+      'Educate patient and family about seizure precautions'
+    ],
+    steps: [
+      { step: 1, action: 'Keep bed in lowest position with wheels locked', rationale: 'Reduces injury if patient falls from bed' },
+      { step: 2, action: 'Pad side rails per facility policy', rationale: 'Prevents injury from hitting rails during seizure' },
+      { step: 3, action: 'Keep side rails up unless directly supervising patient', rationale: 'Prevents falls during seizure activity' },
+      { step: 4, action: 'Have suction equipment ready at bedside', rationale: 'Needed for airway clearance post-seizure' },
+      { step: 5, action: 'Maintain IV access as ordered', rationale: 'Allows rapid medication administration' },
+      { step: 6, action: 'IF SEIZURE OCCURS: Note time seizure begins', rationale: 'Duration affects treatment decisions' },
+      { step: 7, action: 'Call for help and stay with patient', rationale: 'Do not leave patient alone during seizure' },
+      { step: 8, action: 'Ease patient to floor if not in bed', rationale: 'Prevents fall injury' },
+      { step: 9, action: 'Clear area of hazardous objects', rationale: 'Prevents injury from surrounding objects' },
+      { step: 10, action: 'Turn patient to side if possible (recovery position)', rationale: 'Maintains airway and allows secretion drainage' },
+      { step: 11, action: 'Do NOT restrain patient or place anything in mouth', rationale: 'Restraint causes injury; objects can break teeth' },
+      { step: 12, action: 'Protect head with soft padding', rationale: 'Prevents head injury from hitting ground' },
+      { step: 13, action: 'Observe and document seizure activity type', rationale: 'Helps classify seizure type and guide treatment' },
+      { step: 14, action: 'Monitor airway and breathing', rationale: 'Breathing may stop briefly during seizure' },
+      { step: 15, action: 'Note time seizure ends and total duration', rationale: 'Seizure >5 minutes requires emergency intervention' },
+      { step: 16, action: 'Administer PRN seizure medication if ordered', rationale: 'Terminates prolonged seizures' }
+    ],
+    safetyAlerts: [
+      'Seizure lasting >5 minutes = STATUS EPILEPTICUS - call rapid response',
+      'Call for help immediately for first-time seizure',
+      'Do NOT put anything in patient\'s mouth',
+      'Do NOT restrain the patient during seizure activity',
+      'Monitor closely in postictal period for respiratory depression'
+    ],
+    nursingConsiderations: [
+      'Postictal period: patient may be confused, sleepy, or agitated',
+      'Reorient patient gently after seizure',
+      'Maintain quiet, calm environment during recovery',
+      'Assess for injury after seizure activity stops'
+    ],
+    postProcedureCare: [
+      'Keep patient on side until fully conscious',
+      'Suction airway if needed',
+      'Check vital signs and oxygen saturation',
+      'Perform neurological assessment',
+      'Provide emotional support',
+      'Notify physician and document event'
+    ],
+    documentation: [
+      'Time seizure started and ended (duration)',
+      'Type of seizure activity observed',
+      'Body parts involved and progression',
+      'Presence of aura or warning signs',
+      'Loss of consciousness or incontinence',
+      'Postictal state and recovery time',
+      'Interventions provided and patient response'
+    ],
+    commonErrors: [
+      'Attempting to restrain patient during seizure',
+      'Placing objects in mouth',
+      'Not timing the seizure accurately',
+      'Leaving patient unattended during seizure',
+      'Not documenting seizure characteristics'
+    ],
+    tips: [
+      'Use phone timer to track seizure duration accurately',
+      'Video recording can help physician if facility policy allows',
+      'Ask family about typical seizure pattern if known epilepsy',
+      'Have PRN medication ready but wait for order to administer'
+    ],
+    references: [
+      'Epilepsy Foundation. (2023). Seizure First Aid Guidelines.',
+      'AAN. (2023). Treatment of Status Epilepticus Guideline.',
+      'Lewis, S.L., et al. (2023). Medical-Surgical Nursing, 12th ed.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: 'Variable (seizures typically 1-3 minutes)'
+  },
+  {
+    id: 'central-line-dressing',
+    title: 'Central Line Dressing Change',
+    category: 'IV Therapy',
+    categorySlug: 'iv-therapy',
+    description: 'Central line dressing change involves replacing the sterile dressing over a central venous catheter insertion site. Proper technique is critical to prevent central line-associated bloodstream infections (CLABSI).',
+    indications: [
+      'Routine dressing change per protocol (every 5-7 days for transparent dressing)',
+      'Dressing is soiled, wet, or loosened',
+      'Inspection of insertion site needed',
+      'Signs of infection requiring site assessment'
+    ],
+    contraindications: [
+      'None - dressing changes are essential for maintenance'
+    ],
+    equipment: [
+      'Central line dressing change kit containing:',
+      '- Sterile gloves (2 pairs)',
+      '- Chlorhexidine gluconate applicator',
+      '- Sterile transparent dressing',
+      '- Sterile gauze',
+      '- Securement device or tape',
+      'Mask for patient and nurse',
+      'Clean gloves for dressing removal',
+      'Biohazard disposal bag'
+    ],
+    preparation: [
+      'Verify order and review facility CLABSI bundle',
+      'Explain procedure to patient',
+      'Position patient with insertion site accessible',
+      'Apply mask to patient and self',
+      'Perform hand hygiene',
+      'Set up sterile field'
+    ],
+    steps: [
+      { step: 1, action: 'Don mask and have patient wear mask', rationale: 'Reduces airborne contamination at insertion site' },
+      { step: 2, action: 'Perform hand hygiene and don clean gloves', rationale: 'Infection control for old dressing removal' },
+      { step: 3, action: 'Carefully remove old dressing toward insertion site', rationale: 'Prevents catheter dislodgment' },
+      { step: 4, action: 'Inspect insertion site for redness, swelling, drainage, tenderness', rationale: 'Detects early signs of infection' },
+      { step: 5, action: 'Remove and discard gloves, perform hand hygiene', rationale: 'Prepares for sterile technique' },
+      { step: 6, action: 'Open sterile dressing kit using aseptic technique', rationale: 'Maintains sterility of supplies' },
+      { step: 7, action: 'Don sterile gloves', rationale: 'Required for site care and new dressing' },
+      { step: 8, action: 'Clean insertion site with chlorhexidine using back-and-forth friction', rationale: 'CHG provides persistent antimicrobial activity' },
+      { step: 9, action: 'Allow antiseptic to dry completely (approximately 30 seconds)', rationale: 'Drying is essential for antiseptic effectiveness' },
+      { step: 10, action: 'Apply securement device if used per protocol', rationale: 'Stabilizes catheter and prevents migration' },
+      { step: 11, action: 'Apply transparent dressing over insertion site', rationale: 'Creates sterile barrier and allows site visualization' },
+      { step: 12, action: 'Ensure dressing edges are sealed without wrinkles', rationale: 'Prevents contamination from edges lifting' },
+      { step: 13, action: 'Label dressing with date, time, and initials', rationale: 'Documents when next change is due' },
+      { step: 14, action: 'Dispose of supplies appropriately', rationale: 'Infection control and safety' }
+    ],
+    safetyAlerts: [
+      'Stop if catheter appears dislodged - do not attempt to advance',
+      'Report signs of infection immediately (redness, purulent drainage, fever)',
+      'NEVER submerge central line site in water',
+      'Do not use alcohol-based products on polyurethane catheters without checking compatibility',
+      'Assess for catheter function before and after dressing change'
+    ],
+    nursingConsiderations: [
+      'Review daily for continued need of central line',
+      'Use CHG-impregnated dressings for high-risk patients if ordered',
+      'Scrub the hub with alcohol for 15 seconds before each access',
+      'Document insertion site condition with each assessment'
+    ],
+    postProcedureCare: [
+      'Verify line patency and function',
+      'Educate patient about keeping dressing dry',
+      'Document procedure and site assessment',
+      'Plan next dressing change date'
+    ],
+    documentation: [
+      'Date and time of dressing change',
+      'Insertion site condition (clean/dry or describe abnormalities)',
+      'External catheter length if marked',
+      'Patient tolerance',
+      'Dressing type applied'
+    ],
+    commonErrors: [
+      'Not allowing antiseptic to dry completely',
+      'Applying dressing over wet antiseptic',
+      'Not wearing mask during procedure',
+      'Poor sterile technique during change',
+      'Not documenting dressing change date on dressing'
+    ],
+    tips: [
+      'Warm room reduces patient shivering (shivering contaminates site)',
+      'Have patient look away from site during cleaning',
+      'Use sterile saline to remove stubborn adhesive before CHG',
+      'Apply slight tension to dressing while placing to prevent wrinkles'
+    ],
+    references: [
+      'CDC. (2023). Guidelines for the Prevention of Intravascular Catheter-Related Infections.',
+      'INS. (2021). Infusion Therapy Standards of Practice.',
+      'SHEA. (2022). Strategies to Prevent CLABSI.'
+    ],
+    difficulty: 'advanced',
+    estimatedTime: '15-20 minutes'
+  },
+  {
+    id: 'enema-administration',
+    title: 'Enema Administration',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Enema administration involves instilling solution into the rectum and colon to promote bowel evacuation, administer medications, or prepare for diagnostic procedures. Proper technique ensures effectiveness and patient comfort.',
+    indications: [
+      'Constipation unrelieved by other measures',
+      'Bowel preparation for surgery or procedures',
+      'Fecal impaction removal',
+      'Administration of medications',
+      'Relief of fecal incontinence due to impaction',
+      'Barium enema for diagnostic imaging'
+    ],
+    contraindications: [
+      'Recent bowel or rectal surgery',
+      'Acute abdominal pain of unknown origin',
+      'Suspected bowel perforation or obstruction',
+      'Rectal bleeding of unknown origin',
+      'Severe cardiac disease (vagal stimulation risk)'
+    ],
+    equipment: [
+      'Prescribed enema solution (Fleet, soap suds, tap water, or medicated)',
+      'Waterproof pad',
+      'Clean gloves',
+      'Water-soluble lubricant',
+      'Bedpan or access to bathroom',
+      'Toilet paper and cleansing supplies',
+      'IV pole (for high-volume enema)',
+      'Privacy drape'
+    ],
+    preparation: [
+      'Verify order including solution type and volume',
+      'Explain procedure and expected sensations to patient',
+      'Ensure bathroom or bedpan is accessible',
+      'Position patient in left lateral (Sims) position',
+      'Warm solution to body temperature (99-102°F)',
+      'Drape patient for privacy and warmth'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and don clean gloves', rationale: 'Standard precautions for fecal exposure' },
+      { step: 2, action: 'Position patient in left lateral position with right knee flexed', rationale: 'Allows solution to flow with gravity into descending colon' },
+      { step: 3, action: 'Place waterproof pad under patient', rationale: 'Protects bedding from soiling' },
+      { step: 4, action: 'Lubricate tip of enema tubing generously', rationale: 'Reduces friction and discomfort during insertion' },
+      { step: 5, action: 'Lift upper buttock to expose anus', rationale: 'Allows visualization of insertion site' },
+      { step: 6, action: 'Insert tip gently 3-4 inches toward umbilicus', rationale: 'Direction follows anatomy of rectum' },
+      { step: 7, action: 'For pre-packaged enema: squeeze container slowly', rationale: 'Slow instillation reduces cramping' },
+      { step: 8, action: 'For bag enema: raise bag 12-18 inches above anus', rationale: 'Controls flow rate by gravity' },
+      { step: 9, action: 'Instill solution slowly over 5-10 minutes', rationale: 'Slow rate improves retention and reduces cramping' },
+      { step: 10, action: 'If patient reports cramping, lower bag or pause briefly', rationale: 'Reduces discomfort while allowing instillation to continue' },
+      { step: 11, action: 'Encourage patient to hold solution as long as possible (5-15 min)', rationale: 'Longer retention improves effectiveness' },
+      { step: 12, action: 'Clamp tubing before removing and withdraw gently', rationale: 'Prevents leakage during removal' },
+      { step: 13, action: 'Instruct patient to remain lying down until urge is strong', rationale: 'Improves retention time' },
+      { step: 14, action: 'Assist patient to bathroom or provide bedpan', rationale: 'Urgency requires immediate access' },
+      { step: 15, action: 'Document procedure and results', rationale: 'Records effectiveness and patient response' }
+    ],
+    safetyAlerts: [
+      'STOP if resistance is met - do not force insertion',
+      'Stop if patient has severe pain, bleeding, or vagal symptoms (dizziness, bradycardia)',
+      'Do not give tap water enemas to children (electrolyte imbalance risk)',
+      'Limit soap suds enemas to occasional use (mucosal irritation)',
+      'Monitor for electrolyte imbalances with repeated enemas'
+    ],
+    nursingConsiderations: [
+      'Fleet enemas may cause electrolyte imbalances in elderly or renal patients',
+      'Oil-retention enemas are given 30-60 minutes before cleansing enema',
+      'Assess abdominal distension before and after',
+      'Note color, amount, and consistency of returns'
+    ],
+    postProcedureCare: [
+      'Ensure patient has completed evacuation',
+      'Provide perineal hygiene assistance if needed',
+      'Assess for abdominal comfort',
+      'Monitor for adequate hydration',
+      'Document results and patient response'
+    ],
+    documentation: [
+      'Type and amount of enema solution',
+      'Patient tolerance during procedure',
+      'Time of administration and evacuation',
+      'Amount, color, and consistency of returns',
+      'Abdominal assessment before and after'
+    ],
+    commonErrors: [
+      'Solution too cold or too hot',
+      'Instilling too rapidly',
+      'Inserting tip too far',
+      'Not allowing adequate retention time',
+      'Forcing against resistance'
+    ],
+    tips: [
+      'Have patient take slow deep breaths during insertion',
+      'Distract patient with conversation during instillation',
+      'Place toilet paper in toilet to reduce splashing sound',
+      'Digital rectal exam may be needed first if impaction suspected'
+    ],
+    references: [
+      'Perry, A.G., & Potter, P.A. (2023). Clinical Nursing Skills & Techniques.',
+      'Elkin, M.K., et al. (2022). Nursing Interventions & Clinical Skills.',
+      'Taylor, C.R., et al. (2023). Fundamentals of Nursing.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '20-30 minutes'
+  },
+  {
+    id: 'peripheral-pulse-assessment',
+    title: 'Peripheral Pulse Assessment',
+    category: 'Vital Signs',
+    categorySlug: 'vital-signs',
+    description: 'Peripheral pulse assessment involves evaluating the rate, rhythm, strength, and equality of pulses at various anatomical sites. This assessment provides valuable information about cardiovascular status and perfusion.',
+    indications: [
+      'Routine vital signs assessment',
+      'Cardiovascular assessment',
+      'After invasive procedures (cardiac catheterization)',
+      'Suspected peripheral vascular disease',
+      'Post-surgical limb assessment',
+      'Shock or hypotension evaluation',
+      'Assessment before and after cast application'
+    ],
+    contraindications: [
+      'None for assessment',
+      'Avoid excessive pressure over areas of trauma or recent surgery'
+    ],
+    equipment: [
+      'Watch with second hand or digital display',
+      'Stethoscope (for apical pulse if needed)',
+      'Doppler ultrasound device (for difficult-to-palpate pulses)',
+      'Documentation materials',
+      'Marking pen (to mark pulse location if weak)'
+    ],
+    preparation: [
+      'Explain procedure to patient',
+      'Ensure patient has rested for 5 minutes',
+      'Position patient comfortably with limbs supported',
+      'Expose area to be assessed while maintaining modesty',
+      'Warm hands before palpation'
+    ],
+    steps: [
+      { step: 1, action: 'Locate pulse point using correct anatomical landmarks', rationale: 'Ensures accurate assessment at proper location' },
+      { step: 2, action: 'Use fingertips (not thumb) to palpate pulse', rationale: 'Thumb has its own pulse which may be confused with patient\'s' },
+      { step: 3, action: 'Apply gentle pressure - enough to feel pulse but not obliterate it', rationale: 'Too much pressure stops blood flow' },
+      { step: 4, action: 'Count pulse for full 60 seconds (or 30 seconds x 2 if regular)', rationale: 'Full minute is more accurate for irregular rhythms' },
+      { step: 5, action: 'Assess rhythm: regular, regularly irregular, or irregularly irregular', rationale: 'Rhythm abnormalities indicate cardiac issues' },
+      { step: 6, action: 'Assess pulse strength using 0-4 scale', rationale: 'Standardized scale allows comparison' },
+      { step: 7, action: 'Compare pulses bilaterally (right and left)', rationale: 'Asymmetry may indicate vascular occlusion' },
+      { step: 8, action: 'Assess radial pulses (wrist, lateral to flexor tendon)', rationale: 'Most commonly assessed peripheral pulse' },
+      { step: 9, action: 'Assess brachial pulses (medial antecubital fossa)', rationale: 'Used for blood pressure measurement site' },
+      { step: 10, action: 'Assess dorsalis pedis (top of foot, lateral to extensor tendon)', rationale: 'Assesses lower extremity perfusion' },
+      { step: 11, action: 'Assess posterior tibial (behind medial malleolus)', rationale: 'Second major foot pulse for perfusion assessment' },
+      { step: 12, action: 'If unable to palpate, use Doppler ultrasound', rationale: 'Doppler can detect weak pulses not palpable' },
+      { step: 13, action: 'Document findings using standardized scale', rationale: 'Consistent documentation allows trending' }
+    ],
+    safetyAlerts: [
+      'Absent pulse in an extremity requires immediate notification of physician',
+      'New pulse deficit (absent previously present) is emergency',
+      'Never palpate carotid pulses simultaneously (reduces cerebral blood flow)',
+      'Report significant pulse asymmetry between extremities'
+    ],
+    nursingConsiderations: [
+      'Pulse scale: 0=absent, 1+=weak/thready, 2+=normal, 3+=full/bounding, 4+=bounding',
+      'Mark pulse location with pen for difficult-to-find pulses',
+      'Assess temperature and color of extremity along with pulse',
+      'Compare to baseline or previous assessments'
+    ],
+    postProcedureCare: [
+      'Document all findings',
+      'Report abnormalities to physician',
+      'Compare with previous assessments',
+      'Schedule follow-up assessment if indicated'
+    ],
+    documentation: [
+      'Location of pulse assessed',
+      'Rate in beats per minute',
+      'Rhythm (regular/irregular)',
+      'Strength using 0-4 scale',
+      'Bilateral comparison',
+      'Use of Doppler if needed'
+    ],
+    commonErrors: [
+      'Using thumb to palpate (feels own pulse)',
+      'Pressing too hard and obliterating pulse',
+      'Not comparing bilaterally',
+      'Counting for insufficient time',
+      'Not documenting findings consistently'
+    ],
+    tips: [
+      'Warm hands improve patient comfort and vasodilation',
+      'Mark difficult pulses with skin marker for future reference',
+      'Pedal pulses may be congenitally absent in 5-10% of population',
+      'Use tangential lighting to see pulsations in some vessels'
+    ],
+    references: [
+      'Jarvis, C. (2024). Physical Examination and Health Assessment.',
+      'Bickley, L. (2023). Bates\' Guide to Physical Examination.',
+      'American Heart Association. (2023). Vital Signs Measurement Guidelines.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '5-10 minutes'
+  },
+  {
+    id: 'ostomy-care',
+    title: 'Ostomy Care and Pouch Change',
+    category: 'Wound Care',
+    categorySlug: 'wound-care',
+    description: 'Ostomy care involves maintaining the peristomal skin and changing the ostomy pouching system. Proper technique prevents skin breakdown, controls odor, and maintains a secure pouch seal.',
+    indications: [
+      'Routine ostomy pouch change (every 3-7 days)',
+      'Pouch leakage',
+      'Peristomal skin assessment needed',
+      'Patient teaching for self-care',
+      'Pouch or skin barrier damage'
+    ],
+    contraindications: [
+      'None for ostomy care',
+      'Delay non-urgent changes if patient is NPO for procedures'
+    ],
+    equipment: [
+      'New ostomy pouching system (pouch and skin barrier)',
+      'Measuring guide or pre-cut barrier',
+      'Scissors (if cutting barrier)',
+      'Warm water and soft washcloth',
+      'Skin barrier wipes or spray',
+      'Ostomy powder (if skin excoriated)',
+      'Clean gloves',
+      'Waterproof pad',
+      'Plastic bag for disposal',
+      'Mirror for patient teaching'
+    ],
+    preparation: [
+      'Gather all supplies before starting',
+      'Empty current pouch if more than 1/3 full',
+      'Prepare new pouching system (cut barrier if needed)',
+      'Ensure patient privacy',
+      'Position patient for access and visualization',
+      'Explain procedure to patient'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and don clean gloves', rationale: 'Standard precautions for body fluid exposure' },
+      { step: 2, action: 'Empty pouch contents into toilet or measurement container', rationale: 'Reduces odor and mess during removal' },
+      { step: 3, action: 'Gently remove old pouching system from top to bottom', rationale: 'Gentle removal protects peristomal skin' },
+      { step: 4, action: 'Support skin while removing adhesive', rationale: 'Reduces skin trauma and stripping' },
+      { step: 5, action: 'Dispose of old pouch in plastic bag', rationale: 'Controls odor and appropriate waste disposal' },
+      { step: 6, action: 'Assess stoma for color, moisture, and size', rationale: 'Healthy stoma is red, moist, and may change size over time' },
+      { step: 7, action: 'Assess peristomal skin for irritation, breakdown, or rash', rationale: 'Early detection allows intervention' },
+      { step: 8, action: 'Cleanse stoma and skin with warm water only', rationale: 'Soap can leave residue that interferes with adhesion' },
+      { step: 9, action: 'Pat skin completely dry', rationale: 'Moisture prevents barrier adhesion' },
+      { step: 10, action: 'Apply skin barrier wipes if used, allow to dry', rationale: 'Protects skin and improves adhesion' },
+      { step: 11, action: 'If excoriated: apply ostomy powder, brush off excess, seal with barrier wipe', rationale: 'Crusting technique protects damaged skin' },
+      { step: 12, action: 'Measure stoma if size is changing', rationale: 'Barrier opening should be 1/8 inch larger than stoma' },
+      { step: 13, action: 'Cut barrier opening if not pre-cut', rationale: 'Proper fit protects peristomal skin' },
+      { step: 14, action: 'Remove backing and center barrier over stoma', rationale: 'Even placement prevents leakage' },
+      { step: 15, action: 'Press barrier firmly for 30-60 seconds', rationale: 'Body heat activates adhesive' },
+      { step: 16, action: 'Attach pouch to barrier (if two-piece system)', rationale: 'Secure attachment prevents leakage' },
+      { step: 17, action: 'Close bottom of pouch securely', rationale: 'Prevents accidental spillage' }
+    ],
+    safetyAlerts: [
+      'Dark or dusky stoma color indicates compromised blood supply - notify physician',
+      'Mucocutaneous separation (stoma pulling away from skin) needs assessment',
+      'Prolapsed stoma (excessive protrusion) requires specialized management',
+      'Retracted stoma requires convex barrier or specialized products'
+    ],
+    nursingConsiderations: [
+      'Optimal time for pouch change is before meals or 2+ hours after eating',
+      'Stoma will shrink over first 6-8 weeks after surgery',
+      'Dietary modifications may help control gas and odor',
+      'Consult wound/ostomy nurse for complex issues'
+    ],
+    postProcedureCare: [
+      'Ensure pouch is secure before patient dresses',
+      'Provide education on pouch emptying technique',
+      'Discuss signs of complications to report',
+      'Schedule follow-up and supply reordering'
+    ],
+    documentation: [
+      'Stoma appearance (color, size, moisture)',
+      'Peristomal skin condition',
+      'Type of pouching system applied',
+      'Output characteristics (amount, consistency, color)',
+      'Patient participation in care',
+      'Teaching provided'
+    ],
+    commonErrors: [
+      'Cutting barrier opening too large (causes skin exposure)',
+      'Not allowing skin preparations to dry',
+      'Changing pouch too frequently (skin trauma)',
+      'Not pressing barrier firmly enough',
+      'Using products not designed for ostomy care'
+    ],
+    tips: [
+      'Use a hair dryer on cool setting to warm barrier for better adhesion',
+      'Frame the barrier with medical tape for extra security',
+      'Use a mirror to help patient learn to visualize stoma',
+      'Keep spare supplies accessible for emergencies'
+    ],
+    references: [
+      'WOCN. (2023). Management of the Patient with a Fecal or Urinary Diversion.',
+      'United Ostomy Associations of America. (2023). Ostomy Care Guidelines.',
+      'Carmel, J.E., et al. (2016). Wound, Ostomy and Continence Nurses Society Core Curriculum.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '20-30 minutes'
+  },
+  {
+    id: 'doppler-pulse',
+    title: 'Doppler Pulse Assessment',
+    category: 'Vital Signs',
+    categorySlug: 'vital-signs',
+    description: 'Doppler ultrasound pulse assessment uses high-frequency sound waves to detect blood flow when pulses are too weak to palpate. This technique is essential for assessing peripheral vascular status and calculating ankle-brachial index.',
+    indications: [
+      'Pulses not palpable by traditional method',
+      'Peripheral vascular disease assessment',
+      'Post-arterial catheterization monitoring',
+      'Pre and post-vascular surgery',
+      'Ankle-brachial index calculation',
+      'Fetal heart rate monitoring',
+      'Blood pressure in hypotensive patients'
+    ],
+    contraindications: [
+      'None for Doppler assessment'
+    ],
+    equipment: [
+      'Doppler ultrasound device',
+      'Ultrasound transmission gel',
+      'Tissues or washcloth for gel removal',
+      'Blood pressure cuff and sphygmomanometer (for ABI)',
+      'Documentation materials'
+    ],
+    preparation: [
+      'Check Doppler device battery and function',
+      'Explain procedure to patient - they will hear a whooshing sound',
+      'Position patient for access to pulse site',
+      'Have patient rest 10 minutes before ABI assessment',
+      'Ensure room is quiet to hear Doppler sounds clearly'
+    ],
+    steps: [
+      { step: 1, action: 'Turn on Doppler device and set to appropriate frequency', rationale: '8 MHz probe for superficial vessels, 5 MHz for deeper vessels' },
+      { step: 2, action: 'Apply generous amount of ultrasound gel to probe or skin', rationale: 'Gel eliminates air interface and transmits sound waves' },
+      { step: 3, action: 'Locate anatomical landmark for desired pulse', rationale: 'Know anatomy before beginning assessment' },
+      { step: 4, action: 'Place probe at 45-degree angle to skin surface', rationale: 'Angle optimizes sound wave reception from blood flow' },
+      { step: 5, action: 'Move probe slowly until audible signal is obtained', rationale: 'Rushing may miss weak signals' },
+      { step: 6, action: 'Listen for characteristic "whoosh" sound of arterial flow', rationale: 'Arterial flow has pulsatile, rhythmic quality' },
+      { step: 7, action: 'Distinguish arterial from venous sounds (venous is continuous, non-pulsatile)', rationale: 'Venous sound is like wind, arterial is pulsatile' },
+      { step: 8, action: 'Assess quality of signal: strong, weak, or absent', rationale: 'Quality indicates perfusion status' },
+      { step: 9, action: 'For blood pressure: apply cuff proximal to Doppler site', rationale: 'Doppler replaces stethoscope for BP measurement' },
+      { step: 10, action: 'Inflate cuff until Doppler signal disappears', rationale: 'Identifies systolic pressure point' },
+      { step: 11, action: 'Slowly deflate and note pressure when signal returns', rationale: 'First audible signal is systolic pressure' },
+      { step: 12, action: 'Mark pulse location with skin marker if needed for future reference', rationale: 'Helps locate difficult pulses consistently' },
+      { step: 13, action: 'Remove gel with tissue and clean probe', rationale: 'Gel residue is uncomfortable for patient' }
+    ],
+    safetyAlerts: [
+      'Absent Doppler signal in a previously patent vessel requires immediate notification',
+      'Do not use gel containing alcohol on open wounds',
+      'Do not apply excessive pressure with probe over recent surgical sites',
+      'Clean probe per manufacturer guidelines to prevent infection'
+    ],
+    nursingConsiderations: [
+      'Doppler can detect flow not palpable by fingers',
+      'Presence of Doppler signal does not equal adequate perfusion',
+      'ABI <0.9 suggests peripheral arterial disease',
+      'Document both presence of signal and quality'
+    ],
+    postProcedureCare: [
+      'Remove all gel from patient skin',
+      'Clean Doppler probe per facility policy',
+      'Document findings',
+      'Report abnormal findings to physician'
+    ],
+    documentation: [
+      'Location of pulse assessed',
+      'Doppler signal quality (present/absent, strong/weak)',
+      'Blood pressure if measured',
+      'ABI calculation if performed',
+      'Comparison with previous assessments'
+    ],
+    commonErrors: [
+      'Insufficient gel application',
+      'Probe angle too steep or too shallow',
+      'Moving probe too quickly',
+      'Confusing venous for arterial signal',
+      'Not cleaning probe between patients'
+    ],
+    tips: [
+      'Warm gel before application for patient comfort',
+      'Press lightly - heavy pressure can occlude vessel',
+      'Practice on yourself to learn the technique',
+      'Listen for the rhythmic "whoosh-whoosh" of arterial flow'
+    ],
+    references: [
+      'Jarvis, C. (2024). Physical Examination and Health Assessment.',
+      'AHA/ACC. (2016). Guidelines for Lower Extremity PAD.',
+      'Bonham, P.A. (2011). Measuring Ankle-Brachial Index.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '5-10 minutes per site'
+  },
+  {
+    id: 'nebulizer-treatment',
+    title: 'Nebulizer Treatment Administration',
+    category: 'Medication Administration',
+    categorySlug: 'medication-administration',
+    description: 'Nebulizer treatment delivers aerosolized medication directly to the airways for treatment of respiratory conditions. Proper technique ensures optimal medication delivery to the lungs.',
+    indications: [
+      'Asthma exacerbation',
+      'COPD management',
+      'Bronchitis treatment',
+      'Cystic fibrosis therapy',
+      'Patients unable to use metered-dose inhalers',
+      'Delivery of specific respiratory medications',
+      'Post-operative atelectasis prevention'
+    ],
+    contraindications: [
+      'Known allergy to prescribed medication',
+      'Relative: severe hypertension, tachyarrhythmias (for beta-agonists)'
+    ],
+    equipment: [
+      'Nebulizer machine or compressed air/oxygen source',
+      'Nebulizer cup and tubing',
+      'Mouthpiece or face mask',
+      'Prescribed medication',
+      'Normal saline for dilution if needed',
+      'Tissues',
+      'Stethoscope for pre/post assessment'
+    ],
+    preparation: [
+      'Verify order: medication, dose, frequency, diluent',
+      'Check patient allergies',
+      'Perform respiratory assessment (baseline breath sounds, SpO2)',
+      'Position patient upright (High Fowler\'s or sitting)',
+      'Explain procedure and expected duration (10-15 minutes)'
+    ],
+    steps: [
+      { step: 1, action: 'Perform hand hygiene and verify patient using two identifiers', rationale: 'Medication safety and infection control' },
+      { step: 2, action: 'Auscultate breath sounds as baseline', rationale: 'Comparison after treatment shows effectiveness' },
+      { step: 3, action: 'Measure oxygen saturation if available', rationale: 'Baseline for comparison' },
+      { step: 4, action: 'Place medication in nebulizer cup', rationale: 'Medication will be aerosolized for inhalation' },
+      { step: 5, action: 'Add saline diluent if ordered (total volume 3-5 mL)', rationale: 'Adequate volume ensures complete nebulization' },
+      { step: 6, action: 'Attach mouthpiece or face mask to nebulizer cup', rationale: 'Mouthpiece preferred for better medication delivery' },
+      { step: 7, action: 'Connect tubing to nebulizer and air/oxygen source', rationale: 'Creates aerosol for inhalation' },
+      { step: 8, action: 'Set flow rate to 6-8 L/min or per manufacturer', rationale: 'Proper flow creates optimal particle size' },
+      { step: 9, action: 'Instruct patient to hold mouthpiece between lips and breathe normally', rationale: 'Mouth breathing delivers medication to lungs' },
+      { step: 10, action: 'Have patient take slow, deep breaths through mouth', rationale: 'Deep breaths carry medication to lower airways' },
+      { step: 11, action: 'Encourage occasional deep breath held for 2-3 seconds', rationale: 'Enhances medication deposition in lungs' },
+      { step: 12, action: 'Continue until nebulizer cup sputters and mist decreases', rationale: 'Indicates medication is depleted (usually 10-15 min)' },
+      { step: 13, action: 'Turn off nebulizer and remove mouthpiece', rationale: 'Procedure complete' },
+      { step: 14, action: 'Have patient rinse mouth if using steroids', rationale: 'Prevents oral candidiasis from inhaled steroids' },
+      { step: 15, action: 'Reassess breath sounds and oxygen saturation', rationale: 'Evaluates treatment effectiveness' }
+    ],
+    safetyAlerts: [
+      'Monitor for tachycardia and tremors with beta-agonist medications',
+      'Watch for paradoxical bronchospasm (worsening after treatment)',
+      'Steroids require mouth rinsing to prevent thrush',
+      'Use medical air for COPD patients at risk for CO2 retention'
+    ],
+    nursingConsiderations: [
+      'Schedule bronchodilator before steroid if both ordered',
+      'Nebulizer components should be cleaned after each use',
+      'Replace nebulizer equipment per facility policy',
+      'Consider metered-dose inhaler with spacer for stable patients'
+    ],
+    postProcedureCare: [
+      'Document pre and post-treatment assessment',
+      'Encourage coughing and deep breathing after treatment',
+      'Clean nebulizer cup and allow to air dry',
+      'Monitor for medication side effects'
+    ],
+    documentation: [
+      'Medication, dose, and diluent given',
+      'Date and time of administration',
+      'Pre and post-treatment breath sounds',
+      'Pre and post-treatment oxygen saturation',
+      'Patient tolerance and response',
+      'Any adverse reactions'
+    ],
+    commonErrors: [
+      'Not positioning patient upright',
+      'Using nose breathing instead of mouth breathing',
+      'Stopping treatment before medication is fully delivered',
+      'Not cleaning equipment properly',
+      'Not rinsing mouth after steroid treatment'
+    ],
+    tips: [
+      'Tap the nebulizer cup periodically to knock down condensation',
+      'Add saline if medication volume is too small to nebulize effectively',
+      'Pursed-lip breathing can be taught during treatment',
+      'Combine with chest physiotherapy for enhanced secretion clearance'
+    ],
+    references: [
+      'AARC. (2017). Aerosol Delivery Device Selection Clinical Practice Guideline.',
+      'GOLD. (2024). Global Strategy for COPD Diagnosis and Management.',
+      'Perry, A.G., & Potter, P.A. (2023). Clinical Nursing Skills & Techniques.'
+    ],
+    difficulty: 'basic',
+    estimatedTime: '15-20 minutes'
+  },
+  {
+    id: 'neurological-assessment',
+    title: 'Neurological Assessment',
+    category: 'Fundamentals of Nursing',
+    categorySlug: 'fundamentals',
+    description: 'Neurological assessment evaluates the function of the nervous system including level of consciousness, pupillary response, motor function, and sensory function. Regular assessment detects changes indicating neurological deterioration.',
+    indications: [
+      'Admission assessment',
+      'Head injury or trauma',
+      'Stroke or suspected stroke',
+      'Post-neurosurgery monitoring',
+      'Altered level of consciousness',
+      'Seizure activity',
+      'Meningitis or encephalitis',
+      'Spinal cord injury'
+    ],
+    contraindications: [
+      'None for basic assessment',
+      'Cervical spine precautions for trauma patients'
+    ],
+    equipment: [
+      'Penlight',
+      'Pupil gauge',
+      'Reflex hammer (if testing deep tendon reflexes)',
+      'Cotton wisp and sharp object (for sensory testing)',
+      'Glasgow Coma Scale reference',
+      'Documentation materials'
+    ],
+    preparation: [
+      'Review patient history and previous neurological assessments',
+      'Know patient\'s baseline neurological status',
+      'Ensure adequate lighting',
+      'Explain procedure to patient',
+      'Have patient in comfortable position'
+    ],
+    steps: [
+      { step: 1, action: 'Assess level of consciousness (LOC) using AVPU or GCS', rationale: 'LOC is most sensitive indicator of neurological change' },
+      { step: 2, action: 'Evaluate orientation to person, place, time, and situation', rationale: 'Tests cognitive function and awareness' },
+      { step: 3, action: 'Assess pupil size in millimeters before shining light', rationale: 'Establishes baseline pupil size' },
+      { step: 4, action: 'Shine light into each eye and observe direct response', rationale: 'Pupils should constrict briskly when light applied' },
+      { step: 5, action: 'Observe consensual response (opposite pupil should also constrict)', rationale: 'Tests integrity of neural pathways' },
+      { step: 6, action: 'Note pupil shape and equality (PERRLA)', rationale: 'Unequal pupils may indicate increased intracranial pressure' },
+      { step: 7, action: 'Test extraocular movements (follow finger through H pattern)', rationale: 'Tests cranial nerves III, IV, VI' },
+      { step: 8, action: 'Assess facial symmetry - ask to smile, raise eyebrows, puff cheeks', rationale: 'Tests cranial nerve VII function' },
+      { step: 9, action: 'Evaluate speech clarity and appropriateness', rationale: 'Assesses language and cognitive processing' },
+      { step: 10, action: 'Assess motor strength in upper extremities (grip strength, arm drift)', rationale: 'Tests motor pathways; compare bilateral' },
+      { step: 11, action: 'Assess motor strength in lower extremities (foot push/pull, leg lift)', rationale: 'Compare strength bilaterally' },
+      { step: 12, action: 'Evaluate coordination if appropriate (finger-to-nose, heel-to-shin)', rationale: 'Tests cerebellar function' },
+      { step: 13, action: 'Assess sensation to light touch and pain if indicated', rationale: 'Tests sensory pathways' },
+      { step: 14, action: 'Calculate and document Glasgow Coma Scale score', rationale: 'Standardized scoring allows tracking changes' }
+    ],
+    safetyAlerts: [
+      'Decreasing LOC is earliest sign of neurological deterioration',
+      'New pupil inequality (anisocoria) requires immediate physician notification',
+      'Sudden onset weakness, especially unilateral, may indicate stroke - activate stroke protocol',
+      'Cushing\'s triad (hypertension, bradycardia, irregular breathing) indicates increased ICP'
+    ],
+    nursingConsiderations: [
+      'Always compare to patient\'s baseline status',
+      'Frequency of assessment depends on patient acuity',
+      'GCS: Eye (4) + Verbal (5) + Motor (6) = 15 (normal)',
+      'Consider patient medications affecting assessment (sedatives, paralytics)'
+    ],
+    postProcedureCare: [
+      'Document all findings promptly',
+      'Report any changes from baseline immediately',
+      'Continue monitoring at prescribed frequency',
+      'Implement safety measures for altered LOC patients'
+    ],
+    documentation: [
+      'Level of consciousness and orientation',
+      'Glasgow Coma Scale score with breakdown',
+      'Pupil size, shape, and reaction (PERRLA)',
+      'Motor strength (use 0-5 scale)',
+      'Vital signs (part of neurological trending)',
+      'Any new or changed findings'
+    ],
+    commonErrors: [
+      'Not comparing to baseline status',
+      'Not documenting specific GCS subscores',
+      'Assessing pupils in bright room (already constricted)',
+      'Not testing strength bilaterally for comparison',
+      'Attributing changes to medication without further assessment'
+    ],
+    tips: [
+      'PERRLA = Pupils Equal, Round, Reactive to Light and Accommodation',
+      'Motor scale: 5=full strength, 4=weakness against resistance, 3=movement against gravity, 2=movement with gravity eliminated, 1=trace, 0=none',
+      'Test unaffected side first for comparison',
+      'For unresponsive patients: assess response to painful stimuli'
+    ],
+    references: [
+      'Teasdale, G., & Jennett, B. (1974). Assessment of Coma and Impaired Consciousness.',
+      'Hickey, J.V. (2020). Clinical Practice of Neurological and Neurosurgical Nursing.',
+      'Lewis, S.L., et al. (2023). Medical-Surgical Nursing, 12th ed.'
+    ],
+    difficulty: 'intermediate',
+    estimatedTime: '10-15 minutes'
   }
 ];
 
